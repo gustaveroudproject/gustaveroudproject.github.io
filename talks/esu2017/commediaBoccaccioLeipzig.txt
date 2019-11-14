@@ -1,0 +1,163 @@
+
+PRESENTATION Leipzig
+
+## Something about Boccaccio Commedia
+
+When i signed up for this presentation i was expecting a five mins presentation that everyone had to do. Then I realized that it was a bit more and I thought the best way would be to recall the history of the project and my experience in it, because other people may face similar challenges.
+
+
+
+First we will say something about Dante, the Commedia and Boccaccio, 
+- Context: Dante, Commedia, Boccaccio
+- Data modelling (then we will go through the procedure of data modelling)
+- Conclusion: 
+	 
+
+
+
+1
+slide mss.
+Dante - Commedia about 600 mss + early prints. You can imagine that provide a critical edition of this text is not easy. 
+
+2
+slide img edizione
+We will see what Petrocchi did, in the 60's (1966-67), for the national edition, which is still the most authoritative critical text around (of course now I am simplifying things).
+
+
+3
+slide mss.
+So, let's go back to the manuscripts
+
+4
+slide Boccaccio
+Boccaccio has a major role in the diffusion of the Commedia, he made public reading of it and treat Dante as one of the great author of the past, together with the Classics.
+
+5
+slide Boccaccio + 3 mss
+Boccaccio copied the Commedia three times and worked on the text, for him it was a sort of laboratory where experimentation was also possible. Consider that some of these copies are for himself, not for public reading. 
+
+
+5
+slide mss. tagliati da Boccaccio
+Boccaccio introduced in his copies a number of variants, that passed in later copies. So the textual transmission of the Commedia is deeply shaken by Boccaccio's interventions
+
+6
+slide esempio
+Just to give an example
+
+7
+slide testo esempio
+And this are the two tercets, it is the well known episode of Paolo and Francesca who fall in love reading about Lancelot.
+
+8
+slide antica vulgata
+So to recall, the textual transmission prior to Boccaccio has been called the Antica Vulgata
+
+9 
+And Petrocchi based his edition on the mss. of the Antica Vulgata.
+
+
+-----------------------------------------------------
+
+
+10
+slide La Commedia di Boccaccio
+Now I'll say something about the project
+sonia and I
+Sunday project
+Our focus are the three mss copied by Boccaccio and what we may call the internal variants. What we are interested in is the role of Boccaccio as a copyist, while author himself, and his diverse readings of Dante's text.
+
+Our data are the result of the complete collation of the three manuscripts, something like this -->
+
+
+RISPIEGARE MEGLIO TUTTO QUESTO
+11
+slide tabella
+This is an example with the first 16, in total there are more than 500 (places where the texts differ).
+For analysing this corpus and make sense out of it, we had to organize, sort, categorize the variants.
+This is a common procedure in textual scholarship. 
+
+Let's say that we start from this table.
+It is evident that we need to add some information, important for this specific corpus: 
+
+12
+slide table + Petrocchi
+
+13
+slide table + Petrocchi + in rima
+
+14
+slide conceptual model 10
+
+15
+slide table + Petrocchi + in rima + presente
+
+16
+slide conceptual model 11
+
+----------------------------------------------
+
+morphological
+echo
+substitution
+
+
+17
+slide tabella - evidenza nuovo
+	Q. nuovo, nuovi, nuovo - substitution | morphological | addition ?
+	A. addition is wrong, it both a substitution (category) and a morphological variation (sub-category).
+	
+	
+18
+slide conceptual model 01
+
+19
+slide tabella - evidenza testa alta
+	Q. testa alta, testa alta, testa - omission | addition | subtitution ?
+	A. omission / addition
+	
+20
+slide conceptual model 02
+
+21 
+slide ??
+	Q. grande, grave, grave (+ contesto) - morphological | echo | substitution ?
+	A. substitution and echo
+	
+22
+slide conceptual model 03
+
+
+23
+slide completo
+keep doing this, we arrived at the following schema
+
+
+24
+slide echo
+This is still in progress. For example, one of the discussion Sonia and I recently had is the place of the category Echo (but I won't say much about this, because we don't have time)
+
+
+25
+slide data modelling (mss --> conceptual completo --> db --> implementation), img clickable
+Now, if we translate this procedure in the language of data modelling, we would say that
+ 	- From the data, scholars create a conceptual model (where the entities and the relation between the entities are described)
+	- The conceptual model is formalized in a logical model (sufficiently consistent, logically coherent and explicit to be applied in one or more computational implementations). In this case, it is a relational database (see ECHO).
+			ZOOM echo
+	- The logical model is then implemented
+	
+	
+-------------------------------------------------------
+
+
+	Still to come: more data; statistic that will summarize this data
+What I learn: Sonia (who is the expert in this case) pulled for having something that was methodological sound and in line with what is done in the field and relevant for the research question; where one of my biggest preoccupation was to have something that was consistent, logical, coherent and explicit
+	
+What I learn from the logistic point of view: 
+- even if it all starts as a Sunday project,  it is better if at a certain point it is recognized in your work place as part of what you do
+- this will allow for using the infrastructure of your institution, which means for example some space on a server (instead of paying for external and not always reliable services) and would help the project's sustainability.
+	
+	
+	
+	
+	

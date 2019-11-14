@@ -1,0 +1,42 @@
+
+.textjournal {
+	margin:100px 0 100px 100px;
+	font-size: 1.2em;
+	line-height: 1.5;
+}
+
+img {
+	margin-left: 100px;
+}
+
+.metadata {
+	padding: 100px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+/* Orig */   
+/*
+.expan {
+	display: none;
+}
+*/
+
+
+/* Norm */   
+
+.abbr {
+	display: none;
+}
+.title {
+	font-style: italic;
+}
+/*
+br {
+	display: none;
+}
+*/
+

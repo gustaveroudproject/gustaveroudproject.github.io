@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>UNIL 2019</title>
+
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<script>
+			Reveal.initialize({
+					// More info https://github.com/hakimel/reveal.js#dependencies
+					dependencies: [
+						{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					]
+				});
+		</script>
+
+		<style>
+			div.quote {font-size: 0.8em; text-align: justify;}
+			div.source   {font-size: 0.6em; text-align: right; margin-top: 20px}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!--                                                                                                     -->
+<!-- Attenzione, i materiali per questa presentazione sono in Talks/materials -->
+<!--                                                                                                     -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+
+							
+				
+				<section>
+					<h3>Le volet numérique du projet<br/>« Gustave Roud. <i>Œuvres complètes</i> »</h3>
+					<br/><br/>
+					<div style="font-size: 0.85em">
+					UNIL (Master Histoire du livre et &#233;dition des textes), 24.10.2019
+					<br/>
+					<span style="text-decoration: underline; text-decoration-color: yellow">En ligne: <a href="https://elespdn.github.io/talks/20191024_masterHistoireLivre/20191024_masterHistoireLivre.html#/">elespdn.github.io/talks/20191024_masterHistoireLivre/20191024_masterHistoireLivre.html</a></span></div>
+				</section>
+
+
+
+				<section>
+					Table des matières
+					<br/><br/>
+					<ol>
+						<li>Collation automatique</li>
+						<li>Modélisation</li>
+						<li>Encodage <span style="color:grey">[XML/TEI]</span></li>
+						<li>Réseaux génétiques <span style="color:grey">[OWL/RDF]</span></li>
+					</ol>
+				</section>
+
+				<section>
+					1. Collation automatique
+					<br/><br/>
+					<img style="border: none" src="images/focus2.png"/>
+				</section>
+
+				<section>
+					<h3>Outils de collation</h3>
+					<br/>
+					<p>Parmi les plus utilisés ...</p> 
+					<ul>
+						<li><a href="http://juxtacommons.org/" target="_blank">Juxta Commons</a></li>
+						<li>CollateX (<a href="https://collatex.net/" target="_blank">Java</a> | <a href="https://pypi.python.org/pypi/collatex" target="_blank">Python</a>)</li>
+					</ul>
+				</section>
+
+				<section>
+						<img src="images/collateXex.png"></img>
+				</section>
+
+				<section>
+					<span style="font-size: 1.6em">Plateforme <a href="http://variance.ch/" target="_blank">« Variance »</a></span>
+				</section>
+
+				<section>
+					2. Modélisation
+					<br/><br/>
+					<img style="border: none" src="images/shapeData.jpeg" width="20%" />
+				</section>
+
+				<section>
+					prototype
+				</section>
+
+				<section>
+					Un document d'archive ? Par exemple, MS 1 H1/6d
+					<img width="40%" src="images/requiem_dactylo.png">
+				</section>
+
+
+				<section>
+					3. Encodage XML/TEI
+					<br/><br/>
+					<img style="border: none" src="images/focus1.png"/>
+				</section>
+
+				<section data-background-image="images/requiem_dactylo.png" data-background-size="60%"/>
+				</section>
+
+				<section>
+					XML
+					<br/>TEI (Text Encoding Initiative)
+
+				</section>
+
+				<section>
+					<img src="images/requiem_xml.png">
+				</section>
+
+				<section data-background-iframe="../materials/20181025UNIL_master_genetique/XMLstages.html" data-background-interactive>
+				</section>
+
+
+				
+				<section>
+					4. Réseaux génétiquex
+					<br/><br/>
+					<img style="border: none" src="images/focus3.png"/>
+				</section>
+
+				<section>
+					<p style="font-size: 0.8em">Alessio Christen et Elena Spadini, « <a href="https://elespdn.github.io/talks/20190612_Krakow/20190612_Krakow.html" target="_blank">Modelling the writing process</a>. Gustave Roud, from the diary to the work, from the document to the networks », <i>Genesis</i>, Cracovie, 6 juin 2019.</p>
+				</section>
+
+				<!--
+				<section>
+					<img src="images/DHprojectComponents.png">
+					<br/><br/>
+					<div class="source"><i>Intro to Digital Humanities. <a href="http://dh101.humanities.ucla.edu/?page_id=15" target="_blank">1B: Analysis of DH projects</a></i>. Johanna Drucker, UCLA</div>
+				</section>
+
+				<section>
+					<img src="images/DHprojectComponents_highlighted.png">
+					<div class="source"><i>Intro to Digital Humanities. <a href="http://dh101.humanities.ucla.edu/?page_id=15" target="_blank">1B: Analysis of DH projects</a></i>. Johanna Drucker, UCLA</div>
+				</section>
+
+				<section data-background-image="images/magazzino1.png" data-background-size="contain">
+				</section>
+
+				<section data-background-image="images/magazzino2.png" data-background-size="contain">
+				</section>
+
+				<section data-background-image="images/magazzino3_fr.png" data-background-size="contain">
+				</section>
+
+				<section>
+					<img src="images/DHprojectComponents_magazzino_fr.png">
+				</section>
+				-->
+
+				<section>
+					<h3><a href="https://gen-o.github.io/" target="_blank">GENO</a></h3>
+				</section>
+
+
+				<section>
+					
+					<div style="font-size: 0.5em;text-align: left">
+						<b>Editions du Journal de Roud :</b>
+						<ul>
+							<li>Roud, Gustave, <i>Journal</i>, éd. Philippe Jaccottet, Vevey, Bertil Galland, 1982.</li>
+							<li>Roud, Gustave, <i>Journal, Carnets, cahiers et feuillets, 1916-1971</i>, éd. Anne-Lise Delacrétaz et Claire Jaquier, Moudon, Editions Empreintes, 2004.</li>
+						</ul>
+
+						<b>Critique génétique, journal et genèse post-éditoriale :</b>
+						<ul>
+							<li>Biasi, Pierre-Marc de, <i>Génétique des textes</i>, Paris, CNRS, « Biblis », 2011.</li>
+							<li>Christen, Alessio et Elena Spadini, « Modelling the writing process. Gustave Roud, from the diary to the work, from the document to the networks », <i>Umanistica digitale</i> (à paraître)</li>
+							<li>Lejeune, Philippe, « Le journal : genèse d’une pratique », <i>Genesis</i> [En ligne], 32 | 2011. <a href="http://journals.openedition.org/genesis/310">journals.openedition.org/genesis/310</a></li>
+							<li>Mahrer, Rudolf, « La plume après le plomb », <i>Genesis</i> [En ligne], 44 | 2017. <a href="http://journals.openedition.org/genesis/1731">journals.openedition.org/genesis/1731</a></li>
+							<li>Simonet-Tenant, Françoise, « Le journal personnel comme pièce du dossier génétique », Genesis [En ligne], 32 | 2011. <a href="http://journals.openedition.org/genesis/425">journals.openedition.org/genesis/425</a></li>
+						</ul>
+
+						<b>Éditions numériques et génétiques :</b>
+						<ul>
+							<li>TEI - Text Encoding Initiative <a href="http://tei-c.org/">http://tei-c.org/</a></li>
+							<li>CollateX <a href="http://collatex.net/">collatex.net/</a></li>
+							<li>Catalogue of Digital Editions <a href="https://dig-ed-cat.acdh.oeaw.ac.at/">dig-ed-cat.acdh.oeaw.ac.at/</a></li>
+							<li>a catalog of Digital Scholarly Editions <a href="http://www.digitale-edition.de/">www.digitale-edition.de/</a></li>
+							<li>Flanders, Julia, and Fotis Jannidis, eds. 2018. <i>The Shape of Data in Digital Humanities. Modeling Texts and Text-Based Resources</i>. Routledge.</li>
+						</ul>
+					</div>
+
+
+
+				</section>
+
+				
+
+			</div>
+		</div>
+
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../reveal/plugin/markdown/marked.js' },
+					{ src: '../reveal/plugin/markdown/markdown.js' },
+					{ src: '../reveal/plugin/notes/notes.js', async: true },
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

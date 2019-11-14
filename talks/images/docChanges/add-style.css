@@ -1,0 +1,15 @@
+
+.border td{
+    border:solid 1px;
+    padding:1.5%;
+}
+
+.green {
+    color:green;
+    font-weight:bold
+}
+
+.larger {
+    font-size:larger;
+    font-weight:bold
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Note de journal du 30 juillet 1933</title>
+            <author>Gustave Roud</author>
+            <respStmt>
+               <resp>Encodage</resp>
+               <persName>Elena Spadini</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>Materiaux de travail - CRLR Projet Gustave Roud - UNIL</p>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <settlement>Lausanne</settlement>
+                  <institution>UNIL, CRLR</institution>
+                  <repository>Fonds Gustave Roud</repository>
+               </msIdentifier>
+            </msDesc>
+            <bibl>
+               <author>Gustave Roud</author>
+               <title>Journal</title>
+               <editor>Anne-Lise Delacrétaz</editor>
+               <editor>Claire Jaquier</editor>
+               <publisher>Editions Empreintes</publisher>
+               <date when="2004">2004</date>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+            <lb/>La pluie a duré toute la nuit. 
+            <lb/>Au matin, pays lavé, assombri et décoloré tout ensemble 
+            <lb/>sous le soleil blanc. 
+            <choice>
+               <abbr>M.</abbr>
+               <expan>Madeleine</expan>
+            </choice> va à l’église. 
+            <lb/>Encore le <title>Concerto</title>! Puis à II h, le premier 
+            <choice>
+               <abbr>mouv.</abbr>
+               <expan>mouvement</expan>
+            </choice> du 
+            <lb/>
+            <title>
+               <choice>
+                  <abbr>Brandeb.</abbr>
+                  <expan>Brandebourgeois</expan>
+               </choice>
+            </title> 3 à Lausanne, décevant. 
+            <lb/>Après-midi: sommeil jusqu’à 4 h½! 
+            <choice>
+               <abbr>M.</abbr>
+               <expan>Madeleine</expan>
+            </choice> est descendue <lb/>à Moudon à I h, et remonte à 6 h ½. Je pars pour
+            <lb/>
+            <choice>
+               <abbr>V.</abbr>
+               <expan>Vucherens</expan>
+            </choice> par un soleil couchant très blanc. Pays puri<lb break="no"/>fié, 
+            transparent jusqu’aux montagnes. La Savoie, 
+            <lb/>les Alpes de Fribourg sont à deux pas. Olivier à la 
+            <lb/>fontaine, la voix de sa femme l’appelle: il s’agit 
+            <lb/>de descendre à l’abbaye de Moudon. Je rentre
+            <lb/>presque tout de suite. Solitude – je veux dire senti<lb break="no"/>ment 
+            aigu de ma solitude. 
+            <choice>
+               <abbr>Tr.</abbr>
+               <expan>Tristesse</expan>
+            </choice> 
+            <choice>
+               <abbr>mél.</abbr>
+               <expan>mélancolique</expan>
+            </choice> Au retour 
+            <lb/>je trouve J., qui est à la cuisine avec 
+            <choice>
+               <abbr>Mad.</abbr>
+               <expan>Madeleine</expan>
+            </choice> et 
+            <lb/>
+            <choice>
+               <abbr>t.</abbr>
+               <expan>tante</expan>
+            </choice> 
+            <choice>
+               <abbr>Cl-</abbr>
+               <expan>Clara</expan>
+            </choice> Elle s’en va. La soirée se passe à chercher des 
+            <lb/>musiques <hi rend="sousligné">passables</hi>, mais <hi rend="sousligné">rien</hi>.
+         </p>
+      </body>
+   </text>
+</TEI>

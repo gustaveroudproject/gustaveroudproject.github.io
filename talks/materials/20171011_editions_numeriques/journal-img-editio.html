@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- bootstrap -->
+      <link rel="stylesheet"
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+         integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+         crossorigin="anonymous" />
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
+
+		<link rel="stylesheet" type="text/css" href="journal-img-editio.css">
+
+		<title>Éditions numériques</title>
+
+	</head>
+	<body>
+		<div class="section">
+			<img src="../images/20171011_editions_numeriques/1933-coverture.png" width="47%" />
+			<img src="../images/20171011_editions_numeriques/journal-editio.png" width="47%" />
+		</div>
+
+		<hr/>
+		<span class="division">&#129171;</span>
+
+		<div class="section">
+			<img src="../images/20171011_editions_numeriques/19330730-journal.png" width="47%" />
+			<img src="../images/20171011_editions_numeriques/19330730-journal-editio.png" width="47%" />
+		</div>
+
+		<hr/>
+		<span class="division">&#129171;</span>
+		
+		<div class="section">
+			<img src="../images/20171011_editions_numeriques/2-19330730-journal.png" width="47%" />
+			<img src="../images/20171011_editions_numeriques/2-19330730-journal-editio.png" width="47%" />
+		</div>
+
+		<hr/>
+		<span class="division">&#129171;</span>
+
+		<div class="section">
+			<img src="../images/20171011_editions_numeriques/2-19330730-journal.png" width="47%" />
+			<img src="../images/20171011_editions_numeriques/principes-editio-2.png" width="49%" />
+			<p style="float: right; padding-right: 150px">Ed. Delacrétaz-Jaquier, pp. 33. <b>Principes d'édition</b>.</p>
+		</div>
+
+		<hr/>
+		<span class="division">&#129171;</span>
+
+		<div class="section">
+			<h2>Encodage de la note de journal en XML-TEI</h2>
+			<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"<br/> type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?&gt;
+&lt;?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"<br/> type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?&gt;
+&lt;TEI xmlns="http://www.tei-c.org/ns/1.0"&gt;
+   &lt;teiHeader&gt;
+      &lt;fileDesc&gt;
+         &lt;titleStmt&gt;
+            &lt;title&gt;Note de journal du 30 juillet 1933 de Gustave Roud&lt;/title&gt;
+            &lt;author&gt;Gustave Roud&lt;/author&gt;
+            &lt;respStmt&gt;
+               &lt;resp&gt;Encodage&lt;/resp&gt;
+               &lt;persName&gt;Elena Spadini&lt;/persName&gt;
+            &lt;/respStmt&gt;
+         &lt;/titleStmt&gt;
+         &lt;publicationStmt&gt;
+            &lt;p&gt;Materiaux de travail - UNIL&lt;/p&gt;
+         &lt;/publicationStmt&gt;
+         &lt;sourceDesc&gt;
+            &lt;msDesc&gt;
+               &lt;msIdentifier&gt;
+                  &lt;settlement&gt;Lausanne&lt;/settlement&gt;
+                  &lt;institution&gt;UNIL, CRLR&lt;/institution&gt;
+                  &lt;repository&gt;Fonds Gustave Roud&lt;/repository&gt;
+               &lt;/msIdentifier&gt;
+            &lt;/msDesc&gt;
+            &lt;bibl&gt;
+               &lt;author&gt;Gustave Roud&lt;/author&gt;
+               &lt;title&gt;Journal&lt;/title&gt;
+               &lt;editor&gt;Anne-Lise Delacrétaz&lt;/editor&gt;
+               &lt;editor&gt;Claire Jaquier&lt;/editor&gt;
+               &lt;publisher&gt;Editions Empreintes&lt;/publisher&gt;
+               &lt;date when="2004"&gt;2004&lt;/date&gt;
+            &lt;/bibl&gt;
+         &lt;/sourceDesc&gt;
+      &lt;/fileDesc&gt;
+   &lt;/teiHeader&gt;
+   &lt;text&gt;
+      &lt;body&gt;
+         &lt;p&gt;
+            <span class="hicode">&lt;lb/&gt;</span>La pluie a duré toute la nuit. 
+            Au matin, &lt;lb/&gt;pays lavé, assombri et décoloré tout ensemble 
+            &lt;lb/&gt;sous le soleil blanc. 
+            &lt;choice&gt;
+               <span class="hicode">&lt;abbr&gt;M.&lt;/abbr&gt;
+               &lt;expan&gt;Madeleine&lt;/expan&gt;</span>
+            &lt;/choice&gt; va à l’église. 
+            &lt;lb/&gt;Encore le <span class="hicode">&lt;title&gt;Concerto&lt;/title&gt;</span>! Puis à II h, le premier 
+            &lt;choice&gt;
+               <span class="hicode">&lt;abbr&gt;mouv.&lt;/abbr&gt;
+               &lt;expan&gt;mouvement&lt;/expan&gt;</span>
+            &lt;/choice&gt; du 
+            &lt;lb/&gt;
+            &lt;title&gt;
+               &lt;choice&gt;
+                  &lt;abbr&gt;Brandeb.&lt;/abbr&gt;
+                  &lt;expan&gt;Brandebourgeois&lt;/expan&gt;
+               &lt;/choice&gt;
+            &lt;/title&gt; 3 à Lausanne, décevant. 
+            &lt;lb/&gt;Après-midi: sommeil jusqu’à 4 h½! 
+            &lt;choice&gt;
+               &lt;abbr&gt;M.&lt;/abbr&gt;
+               &lt;expan&gt;Madeleine&lt;/expan&gt;
+            &lt;/choice&gt; est descendue &lt;lb/&gt;à Moudon à 1 h, et remonte à 6 h ½. Je pars pour
+            &lt;lb/&gt;
+            &lt;choice&gt;
+               <span class="hicode">&lt;abbr&gt;V.&lt;/abbr&gt;
+               &lt;expan&gt;Vucherens&lt;/expan&gt;</span>
+            &lt;/choice&gt; par un soleil couchant très blanc. Pays puri&lt;lb break="no"/&gt;fié, 
+            transparent jusqu’aux montagnes. La Savoie, 
+            &lt;lb/&gt;les Alpes de Fribourg sont à deux pas. Olivier à la 
+            &lt;lb/&gt;fontaine, la voix de sa femme l’appelle: il s’agit 
+            &lt;lb/&gt;de descendre à l’abbaye de Moudon. Je rentre
+            &lt;lb/&gt;presque tout de suite. Solitude – je veux dire senti&lt;lb break="no"/&gt;ment 
+            aigu de ma solitude. 
+            &lt;choice&gt;&lt;abbr&gt;mél&lt;/abbr&gt;&lt;expan&gt;mélancolique&lt;/expan&gt;
+               <span class="hicode">&lt;abbr&gt;Tr.&lt;/abbr&gt;
+               &lt;expan&gt;Tristesse&lt;/expan&gt;</span>
+            &lt;/choice&gt; 
+            &lt;choice&gt;
+               <span class="hicode">&lt;abbr&gt;mél.&lt;/abbr&gt;
+               &lt;expan&gt;mélancolique&lt;/expan&gt;</span>
+            &lt;/choice&gt;. Au retour 
+            &lt;lb/&gt;je trouve J., qui est à la cuisine avec 
+            &lt;choice&gt;
+               &lt;abbr&gt;Mad.&lt;/abbr&gt;
+               &lt;expan&gt;Madeleine&lt;/expan&gt;
+            &lt;/choice&gt; et 
+            &lt;lb/&gt;
+            &lt;choice&gt;
+               &lt;abbr&gt;t.&lt;/abbr&gt;
+               &lt;expan&gt;tante&lt;/expan&gt;
+            &lt;/choice&gt; 
+            &lt;choice&gt;
+               &lt;abbr&gt;Cl.&lt;/abbr&gt;
+               &lt;expan&gt;Clara&lt;/expan&gt;
+            &lt;/choice&gt;. Elle s’en va. La soirée se passe à chercher des 
+            &lt;lb/&gt;musiques <span class="hicode">&lt;hi rend="sousligné"&gt;passables&lt;/hi&gt;</span>, mais <span class="hicode">&lt;hi rend="sousligné"&gt;rien&lt;/hi&gt;</span>.
+         &lt;/p&gt;
+      &lt;/body&gt;
+   &lt;/text&gt;
+&lt;/TEI&gt;
+
+			</pre>
+		</div>
+
+		<hr/>
+		<span class="division">&#129171;</span>
+
+		<div class="section">
+			<iframe width="95%" height="1700px" src="xsloutput/19330730.html"></iframe>
+		</div>
+		
+
+		<span class="division">&#129171;</span>
+		
+		<div class="section">
+			<h1 style="text-align: center"><a href="../20171011_editions_numeriques.html#/20">Résumé</a></h1>
+		</div>
+
+		
+
+		<div class="section">
+		</div>
+		
+
+	</body>
+</html>

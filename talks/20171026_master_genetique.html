@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Éditions num&#233;riques (2)</title>
+
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="reveal/css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+							
+				
+				<section>
+					<h3>Introduction aux &#233;ditions et <br/>aux outils num&#233;riques (2).<br/>Génétique textuelle</h3>
+					<h5>Le projet « Gustave Roud, <i>Œuvres compl&#232;tes</i> »</h5>
+					<br/>
+					<p>UNIL - Master Histoire du livre et &#233;dition des textes, 23.10.2017</p>
+				</section>
+			
+				<section>
+					<p>" ... la critique génétique instaure un nouveau regard sur la littérature. Son objet: les manuscrits littéraires, en tant qu’ils portent la trace d’une dynamique, celle du texte en devenir. Sa méthode: la mise à nu du corps et du cours de l’écriture, assortie de la construction d’une série d’hypothèses sur les opérations scripturales. Sa visée: la littérature comme un faire, comme activité, comme mouvement. " <br/>(<a href="http://uahost.uantwerpen.be/lse/index.php/lexicon/genetic-criticism/" target="_blank">Grésillon 1994, 7</a>).</p>
+				</section>
+				
+					
+				<section>
+					<h3><a href="http://uahost.uantwerpen.be/lse/" target="_blank">Lexicon of Scholarly Editing</a></h3></p>
+				</section>
+
+				<section>
+					<h2>Plateforme <a href="http://variance.ch/" target="_blank">« Variance »</a></h2>
+				</section>
+
+				<section>
+					<h2><a href="http://www.bovary.fr/" target="_blank">« Les manuscrits de <br/><i>Madame Bovary</i> »</a></h2>
+					<br/><br/>
+					<p><a href="http://www.bovary.fr/folio_visu.php?folio=458&mode=sequence&mot=" target="_blank">Prèmiere partie</a> 
+						<br/>[ suggestions | codes | explorer la séquence ]</p>
+				</section>	
+
+				<section>
+					<h2><a href="http://www.beckettarchive.org/" target="_blank">« Samuel Beckett Digital Manuscript Project »</a></h2>
+					<br/><br/>
+					<p><a href="http://www.beckettarchive.org/demo/MS-HRC-SB-5-10/01r?view=image">Demo <i>L'innomable</i></a>
+					<br/>[ digital + paper | compare sentences ]</p>
+				</section>
+				
+				
+				<section>
+					<h3>Outils de collation</h3>
+					<br/>
+					<p>Parmi les plus utilisés ...</p> 
+					<ul>
+						<li><a href="http://juxtacommons.org/" target="_blank">Juxta Commons</a></li>
+						<li>CollateX (<a href="https://collatex.net/" target="_blank">Java</a> | <a href="https://pypi.python.org/pypi/collatex" target="_blank">Python</a>)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Gustave Roud, Dossier « Écureuil »</h3>
+					<br/>
+					<ul>
+						<li><a href="http://nbviewer.jupyter.org/github/elespdn/elespdn.github.io/blob/master/talks/jupyternotebook/20171026masterUNIL/RoudCollateXEcureuil.ipynb" target="_blank">Collation</a> des textes avec CollateX</li>
+						<br/>
+						<li><a href="http://juxtacommons.org/shares/ALJ3jH" target="_blank">Collation</a> des textes avec Juxta Commons</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Gustave Roud, Dossier <br/>« Près de la tombe de F. »</h3>
+					<br/>
+					<ul>
+						<li><a href="http://nbviewer.jupyter.org/github/elespdn/elespdn.github.io/blob/master/talks/jupyternotebook/20171026masterUNIL/RoudCollateXPresTombe.ipynb" target="_blank">Collation</a> des textes avec CollateX</li>
+					</ul>
+				</section>
+				
+				
+				<section>
+					<p style="font-size:0.8em">Elena Spadini</p>
+					<br/>
+					<div style="font-size:0.7em">
+					<p>UNIL - Centre de recherches sur les lettres romandes</p>
+					<p><i>elena.spadini@unil.ch</i></p>
+					<p><a href="http://elenaspadini.com" target="_blank">elenaspadini.com</a></p>
+					</div>
+				</section>
+				
+			</div>
+		</div>
+
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'reveal/plugin/markdown/marked.js' },
+					{ src: 'reveal/plugin/markdown/markdown.js' },
+					{ src: 'reveal/plugin/notes/notes.js', async: true },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,446 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Éditions num&#233;riques</title>
+
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="reveal/css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+							
+				
+				<section>
+					<h2>&#233;ditions critiques, <i>RDF</i><br/> et Gustave Roud</h2>
+					<br/>
+					<p>Publication numérique (Isaac Pante)<br/>UNIL, 27.11.2018</p>
+					
+				</section>
+
+
+
+<!-- ==================================================================================================  -->
+<!-- 										SECTION 1                                               -->
+<!-- ==================================================================================================  -->
+
+
+			
+				<section>
+					1. Introduction aux &#233;ditions critiques numériques
+				</section>
+
+				<section>
+					<a href="http://variance.ch" target="_blank">variance.ch</a>
+				</section>
+
+
+				<section>
+					<h3>Édition critique</h3>
+					<p><i>Scholarly edition</i></p>
+					<br/>
+					<div class="fragment">Une édition critique a pour but d'établir un texte fiable.<br/>Elle rend compte de la transmission d'une œuvre et des circonstances de sa rédaction.<br/>L'édition critique est généralement commentée grâce à des notes, des introductions, etc. (mais les éditions commentées ne sont pas toutes critiques !)</div>
+				</section>
+
+				<section>
+					<div class="fragment">
+						<h3>Édition critique num&#233;rique</h3>
+						<i>Scholarly Digital Edition</i> - SDE 
+					</div>
+					<br/><br/>
+					<div class="fragment">
+						<h3>Num&#233;rique ou num&#233;ris&#233;e ?</h3>
+						<i>digital or digitized?</i>
+					</div>
+				</section>
+				
+					
+				<section>
+					<h2>Catalogues</h2>
+					<br/>
+					<ul>
+						<li>Patrick Sahle, <a href="http://www.digitale-edition.de/" target="_blank">A catalogue Digital Scholarly Editions</a></li>
+						<li>Greta Franzini, <a href="https://dig-ed-cat.acdh.oeaw.ac.at/" target="_blank">Catalogue Digital Editions</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Compte rendues and criteria</h2>
+					<br/>
+					<ul>
+						<li>IDE, <i><a href="http://ride.i-d-e.de/" target="_blank">RIDE. A review journal for digital editions and resources</a></i>. <a href="http://www.i-d-e.de/publikationen/weitereschriften/criteria-version-1-1/" target="_blank">Criteria</a> (de|en|it|es)</li>
+						<li>MLA (Modern Language Association), <a href="https://scholarlyeditions.commons.mla.org/2015/09/02/cse-white-paper/" target="_blank">White Paper of the MLA’s Committee on Scholarly Editions</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Quelques &#233;ditions num&#233;riques suisses</h3>
+					<ul>
+						<li class="fragment"><a href="https://www.e-sequence.eu/en/" target="_blank"><i>Digital edition of the Saint Gall corpus of Sequences by Notker Balbulus</i></a></li>
+						<li class="fragment"><a href="http://www.ub.unibas.ch/bernoulli/index.php/Hauptseite" target="_blank"><i>Die Briefwechsel der Mathematiker Bernoulli</i></a></li>
+					</ul>
+				</section>	
+
+				<section>
+					<h3>Autres exemples</h3>
+					<ul><i>
+						<li><a href="http://burckhardtsource.org">Burckhardt Source</a></li>
+						<li><a href="http://jechante.exeter.ac.uk/archive/index.html">Je chante ung chant. An Archive of Late-Medieval French Lyrics</a> </li>
+						<li><a href="http://www.thomasgray.org">Thomas Gray Archive</a></li>
+						<li><a href="https://www.oldbaileyonline.org">The Proceedings of the Old Bailey</a></li></i>
+					</ul>
+				</section>
+
+				<section>
+					<h4>À chercher dans les &#233;ditions ...</h4>
+					<br/>
+					<ul>
+						<li>Donn&#233;es / Metadonn&#233;es</li>
+						<li>Comment citer</li>
+						<li>Sources</li>
+					</ul>
+					<br/><br/><br/>
+					<div style="font-size: 0.8em">
+					<i><a href="http://vangoghletters.org" target="_blank">Vincent van Gogh - The Letters</a></i>
+					| <a href="http://shelleygodwinarchive.org/" target="_blank"><i>The Shelley-Godwin Archive</i></a></div>
+				</section>
+				
+				
+
+				<section>
+					<h3>Édition num&#233;rique</h3>
+					<br/> 
+					<p>Une &#233;dition num&#233;rique ne peut pas être convertie dans une &#233;dition papier sans une perte substantielle de contenu ou de fonctionnalit&#233;</p>
+				</section>
+
+				<section id="digital">
+					<div>
+						<img src="images/20171011_editions_numeriques/editio-Sahle-Bd_7.png" width="20%"/>
+						<img src="images/20171011_editions_numeriques/editio-Sahle-Bd_8.png" width="20%"/>
+						<img src="images/20171011_editions_numeriques/editio-Sahle-Bd_9.png" width="20%"/>
+					</div>  
+					
+					<p style="font-size: 0.7em">Patrick Sahle, <a href="http://www.i-d-e.de/publikationen/schriften/s7-9-digitale-editionsformen/" target="_blank"><i>Digitale Editionsformen, Zum Umgang mit der Überlieferung unter den Bedingungen des Medienwandels</i></a>, 3 Bände, Norderstedt: Books on Demand 2013 </p>
+				</section> 
+
+				<section>
+					<p>Digital scholarly editions are not just scholarly editions in digital media: digital ≠ digitized</p>
+					<br/>
+					<p style="font-size: 0.5em">"Wiedergabe ohne Erschließung ist keine Edition. Eine bloße Reproduktion, ein  einfaches Faksimile, eine digitale Bibliothek ist keine Edition"</p>					
+					<p style="font-size: 0.5em">"Deshalb kann eine digitale Edition nicht einfach die digitale Fassung einer auch im Druck realisierbaren Edition sein – zu ihrem Wesen gehört, dass sie über die Beschränkungen der typografischen Edition hinweggeht"</p>
+					<p style="font-size: 0.5em">(Sahle 2016/2: 141-142; 149)</p>                                                                                 
+				</section>      
+				
+				<section >
+					<p>A digital edition can not be printed without a loss of information and/or functionality</p>
+					<br/>					
+					<p style="font-size: 0.5em">"Eine digitale Edition ist dadurch bestimmt, dass sie nicht ohne wesentliche Informations- und Funktionsverluste in eine typografi sche Form gebracht werden kann – und in diesem Sinne über die druckbare Edition hinausgeht."</p>
+					<p style="font-size: 0.5em">(Sahle 2016/2: 149)</p>  
+				</section>         	
+
+				<section>
+					<h3>Édition num&#233;rique ... ou num&#233;ris&#233;e?</h3>
+					<br/>
+					<ul>
+						<li><a href="http://inamidst.com/stuff/sappho/">Sappho's poems</a></li>
+					</ul>
+				</section>	
+
+
+
+<!-- ==================================================================================================  -->
+<!-- 										SECTION 2                                                 -->
+<!-- ==================================================================================================  -->
+
+
+				<section>2. Données structurées. RDF et Linked Data</section>
+
+				<section>
+					<img src="images/20181005_fbk/DHprojectComponents.png">
+					<br/><br/>
+					<div class="source"><i>Intro to Digital Humanities. <a href="http://dh101.humanities.ucla.edu/?page_id=15" target="_blank">1B: Analysis of DH projects</a></i>. Johanna Drucker, UCLA</div>
+				</section>
+
+				<section>
+					<img src="images/20181005_fbk/DHprojectComponents_highlighted.png">
+					<div class="source"><i>Intro to Digital Humanities. <a href="http://dh101.humanities.ucla.edu/?page_id=15" target="_blank">1B: Analysis of DH projects</a></i>. Johanna Drucker, UCLA</div>
+				</section>
+
+				
+
+				<section data-background-image="images/20181005_fbk/magazzino1.png" data-background-size="contain">
+				</section>
+
+				<section data-background-image="images/20181005_fbk/magazzino2.png" data-background-size="contain">
+				</section>
+
+				<section data-background-image="images/20181025UNIL_master_genetique/magazzino3_fr.png" data-background-size="contain">
+				</section>
+
+				<section>
+					<img src="images/20181025UNIL_master_genetique/DHprojectComponents_magazzino_fr.png">
+				</section>
+
+
+				
+
+<!-- ==================================  END INTRO SECTION 2  ===========================================  -->
+
+				
+
+				<section>
+					<div style="text-align: left">
+					Projet :
+					<br/><br/>Les sites de conservation <br/>des œuvres de Van Gogh e de Gauguin
+				</div>
+				</section>
+
+				<section data-background-image="images/20181118_neuchatel/rdf.png" data-background-size="contain">
+				</section>
+
+				<section>
+					sujet &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+					prédicat &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; objet 
+				</section>
+
+				<section>
+					Tableau &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					a comme auteur &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Personne
+					<br/><br/>
+					Tableau &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					est conservé au musée &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Musée
+				</section>
+
+				<section>
+					Exercice 1 <br/><br/>Créer des triples avec les images, <br/>les artistes, les musées et les prédicats
+					<br/><br/><br/>
+					<i>
+					Tableau &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					a comme auteur &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Personne
+					<br/><br/>
+					Tableau &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					est conservé au musée &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Musée
+				</i>
+				</section>
+
+				<section>
+					<img src="images/20181118_neuchatel/dbpedia.png" width="40%">
+				</section>
+
+
+				<section>
+					<img src="images/20181118_neuchatel/dbpedia.png" width="20%">
+					<br/>
+					<div style="background-color: lightgray">
+						dbr:<i>ressource</i>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						dbo:<i>prédicat</i>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						dbr:<i>ressource</i>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</div>
+					PREFIX dbo: &#60;http://dbpedia.org/ontology/&#62; 
+					<br/><br/>
+					Tableau &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					a comme auteur &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Personne
+					<br/>
+					<div style="background-color: lightgray">
+						dbr:<i>ressource</i>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+						dbo:author   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+						dbr:<i>ressource</i>
+					</div>
+					<br/>
+					Tableau &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					est conservé au musée &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Musée
+					<br/>
+					<div style="background-color: lightgray">
+						dbr:<i>ressource</i>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+						dbo:museum   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+						dbr:<i>ressource</i>
+					</div>
+				</section>
+
+
+				<section>
+					<a href="http://dbpedia.org/page/Landscape_near_Arles" target="_blank">dbpedia.org/page/Landscape_near_Arles</a>
+					<br/><br/><br/>
+					dbr:Landscape_near_Arles&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					dbo:author  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					dbr:Paul_Gauguin  
+					<br/><br/><br/>
+					dbr:Landscape_near_Arles  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					dbo:museum  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					dbr:Indianapolis_Museum_of_Art
+				</section>
+
+
+				<section>
+					<a href="http://dbpedia.org/sparql" target="_blank">dbpedia.org/sparql</a>
+					<br/><br/><i>Van Gogh, œuvres et sites de conservation</i>
+					<br/><br/>
+					<div style="text-align: left">
+						<br/>PREFIX dbr: &#60;http://dbpedia.org/resource/&#62;
+						<br/>PREFIX dbo: &#60;http://dbpedia.org/ontology/&#62;
+						<br/>SELECT DISTINCT ?painting ?museum
+						<br/>WHERE { ?painting a dbo:Artwork . 
+						     <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ?painting dbo:author dbr:Vincent_van_Gogh .
+						     <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ?painting dbo:museum ?museum }
+						<br/>LIMIT 30
+					</div>
+				</section>
+
+
+
+<!-- ==================================================================================================  -->
+<!-- 										SECTION 3                                                -->
+<!-- ==================================================================================================  -->
+
+
+				<section>3. « Gustave Roud, <i>Œuvres complètes</i> »</section>
+
+				<section>
+					<img src="images/20181127_editions_critiques_numeriques/1933-coverture.png" width="40%">
+				</section>
+
+				<section>
+					<a href="images/20181127_editions_critiques_numeriques/posterDariahNeuchatel.pdf" target="_blank"><img src="images/20181127_editions_critiques_numeriques/posterDariahNeuchatel.png" width="40%"></a>
+				</section>
+
+				<section>
+					<h4>exercise</h4>
+					Récréer l'ontologie
+					<br/><br/><br/>
+					<div style="font-size: 0.7em">
+						Manuscript &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						partial_textual_reuse &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Genetic_dossier
+						<br/><br/>
+						Manuscript &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						is_part_of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Genetic_dossier
+					</div>
+				</section>
+				<section>
+					<h4>ontology</h4>
+					<div style="font-size: 0.7em">
+						Manuscript &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						partial_textual_reuse &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Genetic_dossier
+						<br/><br/>
+						Manuscript &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						partial_thematic_reuse &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Genetic_dossier
+						<br/><br/>
+						Manuscript &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						is_part_of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Genetic_dossier
+						<br/><br/>
+						Publication &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						is_part_of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Genetic_dossier
+						<br/><br/>
+						Manuscript &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						new_version_avantexte &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Manuscript
+						<br/><br/>
+						Genetic_dossier &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						new_version_alreadypublished &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Genetic_dossier
+					</div>
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ==================================================================================================  -->
+<!-- 										SECTION 4 - conclusions                                               -->
+<!-- ==================================================================================================  -->
+
+
+
+							
+
+				<section>
+					<h3>Recap section 1</h3>
+					<ul>
+						<li>édition critique</li>
+						<li>numérique vs numérisée</li>
+						<li>données et métadonnées</li>
+						<li>citer les éditions numériques</li>
+						<li>source en XML/TEI</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Recap section 2</h3>
+					<ul>
+						<li>données structurées</li>
+						<li>RDF ontology and dataset</li>
+						<li>modelisation des données (model logique)</li>
+					</ul>
+					<br/><br/>
+					<h3>Recap section 3</h3>
+					<ul>
+						<li>cas d'étude pour la modelisation de données</li>
+						<li>interpretative et collaborative</li>
+					</ul>
+				</section>
+				
+				
+				<section>
+					<p style="font-size:0.8em">Elena Spadini</p>
+					<br/>
+					<div style="font-size:0.7em">
+					<p>UNIL - Centre de recherches sur les lettres romandes</p>
+					<p><i>elena.spadini@unil.ch</i></p>
+					<p><a href="hhtp://elenaspadini.com" target="_blank">elenaspadini.com</a></p>
+					</div>
+				</section>
+				
+			</div>
+		</div>
+
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'reveal/plugin/markdown/marked.js' },
+					{ src: 'reveal/plugin/markdown/markdown.js' },
+					{ src: 'reveal/plugin/notes/notes.js', async: true },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

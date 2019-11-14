@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>CRLR GR MS1H16d</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>UNIL Cours</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>CRLR GR MS1H16d</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+
+        <body>
+            <head>
+                <title><hi rend="underline">D'un Requiem</hi></title>
+            </head>
+            <p>
+                <lb/><hi rend="red">R</hi>êve, o retrouver ma vraie voix, loin de ce concert de
+                paroles <lb/>apprêtées, comme un enfant! Celle que tu pourrais entendre, si le sel
+                <lb/>des larmes l'avait faite assez pure. Il n'y a point suffi. </p>
+
+            <p> Parfois je redescends vers le bosquet riverain de sapins et de <lb/>frênes où ma vie
+                a reçu jadis sa secrète blessure d'éternité. Je <lb/>retrouve un lieu sans mémoire,
+                absent et familier tout ensemble, et <lb/>prodigue d'une telle douceur d'accueil que
+                je n'ose plus l'interroger, <lb/>comme un hôte dont la parole s'embarasse. Sous
+                l'arc des vergnes <add seq="1" place="above" hand="pencil">aulnes</add>, le
+                <lb/>ruisseau brise et brouille aux pierres <subst>
+                    <del type="crossedOut" seq="2" hand="pen">en saillie</del>
+                    <add place="above" seq="2" hand="pen">noyées</add>
+                </subst> toute une écume de <lb/>syllabes <del type="crossedOut" seq="2" hand="pen"
+                        ><unclear>xxx</unclear></del>, se reprend soudain avec d'étranges rires de
+                <lb/>gorge, change de voix et de reflets, <subst>
+                    <del type="crossedOut" seq="2" hand="pen">lisse un</del>
+                    <add place="above" seq="2" hand="pen">double au</add>
+                </subst> miroir d'une seconde <lb/><del type="crossedOut" seq="2" hand="pen"
+                        ><unclear>xxx doublex</unclear></del> l'épi rose d'un<del type="crossedOut"
+                    seq="2" hand="pen"><unclear>e</unclear></del> épilobe, puis détaille
+                distinctement <lb/>une phrase si proche de l'humain que je m'épuise à la vouloir
+                saisir <lb/><del type="crossedOut" seq="2" hand="pen">figé bouche close,</del>
+                tandis qu'à mon épaule glisse une petite pluie <lb/>d'aiguilles et d'écorces, <add
+                    place="inline" seq="2" hand="pen">la</add> salutation là-haut d'un écureil. </p>
+
+            <p> Vains retours, et de tous le plus vain, celui d'aujourd'hui, peut- <lb/>être. Mais
+                il <hi rend="underline">fallait</hi> reprendre le chemin. Je n'en pouvais, je n'en
+                <lb/>puis plus de cerner en moi ce mystère d'un mystère où tout inexorable-
+                <lb/>ment me renfonce<add place="above" seq="2" hand="pen"
+                    ><unclear>xxxx</unclear></add>. Tu le sais: au centre de ma vie, il y a cette
+                faille, <lb/>cette transparence, ce suspens indicible sur quoi se fixent, fascinés,
+                <lb/>mon regard et ma pensée. Un jour, je fus admis vivant à l'éternel. </p>
+
+        </body>
+    </text>
+</TEI>

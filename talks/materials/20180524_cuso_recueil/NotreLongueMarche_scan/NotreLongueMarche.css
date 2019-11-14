@@ -1,0 +1,49 @@
+.th-air {
+	background-color: #66c2a5; 
+	padding: 10px;
+}
+
+th {
+	background-color: #8A8A8A;
+	padding: 10px;
+}
+
+td {
+	width: 30%;
+	text-align: justify;
+	padding: 0 30px 30px 30px;
+	font-size: 0.5em;
+}
+
+.highlight-air {
+	color: black; 
+	background-color: #d1ece4;
+	font-size: 2em;
+}
+
+.highlight {
+	color: black;
+	background-color: #d0d0d0;
+	font-size: 2em;
+}
+
+
+.highlight2 {
+	color: black;
+	background-color: #d0d0d0;
+	font-size: 2.5em;
+}
+
+
+.variant {
+	background-color: yellow;
+}
+
+.variant1 {
+	background-color: #00ffff;
+}
+
+
+.variant2 {
+	background-color: #80ff00;
+}

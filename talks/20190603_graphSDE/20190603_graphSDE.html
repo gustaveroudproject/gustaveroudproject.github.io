@@ -1,0 +1,465 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>graphSDE2019</title>
+
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<script>
+			Reveal.initialize({
+					// More info https://github.com/hakimel/reveal.js#dependencies
+					dependencies: [
+						{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					]
+				});
+		</script>
+
+		<style>
+			div.quote {font-size: 0.8em; text-align: justify;}
+			div.source   {font-size: 0.6em; text-align: right; margin-top: 20px}
+			.grey {color:grey;}
+			.small {font-size: 0.8em}
+			.smaller {font-size: 0.6em}
+			
+			.coloredTitle {
+				background-color:#003333
+			}			}	
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!--                                                                                                     -->
+<!-- Attenzione, i materiali per questa presentazione sono inside Talks/jupyter notebook e in Talks/materials -->
+<!--                                                                                                     -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+
+							
+				
+				<section>
+					<h3>Which Resources<br/>for Which Editions</h3>
+					<h4>Modelling the Relationships<br/>between Witnesses</h4>
+					<br/><br/>
+					<div class="smaller">
+					<i>#GraphSDE2019</i>
+					<br/><br/>
+					Elena Spadini, Université de Lausanne
+					<br/><br/>
+					Présentation en ligne: <span style="text-decoration: underline; text-decoration-color: grey"><a href="https://elespdn.github.io/talks/20190603_graphSDE/20190603_graphSDE.html#/">elespdn.github.io/talks/20190603_graphSDE/20190603_graphSDE.html</a></span></div>
+				</section>
+
+
+
+				<!--
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+ -->
+
+ 				<section>
+ 					<h3 style="color: tomato">Table of contents</h3>
+ 					<br/>
+ 					<ol style="font-size: 0.9em">
+ 						<li>Gustave Roud and a model for genetic criticism</li>
+ 						<li>Mapping implications</li>
+ 						<li>Towards an upper level ontology for textual criticism</li>
+ 					</ol>
+ 				</section>
+
+
+
+				<section>
+					<table>
+						<tr>
+							<td width="50%">
+								<div>
+									<img src="images/roud.png"/>
+								</div>
+							</td>
+							<td>
+								<div class="small">
+									<b>Gustave Roud (1897-1976)
+									<br/><i>Complete works</i></b>
+									<br/><br/>
+									<div class="small">
+									<br/>Dir. by Claire Jaquier and Daniel Maggetti
+									<br/><br/>Researchers: Alessio Christen, Bruno Pellegrino, Elena Spadini, Julien Burri, Raphaëlle Lacord</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</section>
+
+
+				<section data-background-image="images/roud_materiali.png" data-background-size="contain">
+				</section>
+
+
+				<section data-background-iframe="../materials/20180524_cuso_recueil/AirSolitude_barchart/piechart_saisons.png" data-background-size="contain" data-background-interactive>
+					<h4 style="text-align: right">Exemple.<br/><em>Air de la solitude</em></h4>
+				</section>
+
+				<section data-background-iframe="../materials/20180524_cuso_recueil/AirSolitude_barchart/barchart_revue.html" data-background-size="contain" data-background-interactive>
+				</section>
+
+
+				<section data-background-image="images/cendreALL.png">
+				</section>
+
+				<section data-background-image="images/graphCendre1.png" data-background-size="contain">
+				</section>
+
+				<section>
+					<img src="images/notreLongueMarche.png">
+				</section>
+
+				<section data-background-image="images/graphCendre2.png" data-background-size="contain">
+				</section>
+
+				<section data-background-image="images/graphRequiem1.png" data-background-size="contain">
+				</section>
+
+				<section data-background-image="images/graphRequiem2.svg" data-background-size="contain">
+				</section>
+
+				
+				
+
+				<section>
+					<h4>Classes</h4>
+					<br/>
+					<table class="small">
+						<tr>
+							<td><span style="font-size: 3em">&#9651;</span></td>
+							<td>Diary</td>
+						</tr>
+						<tr>
+							<td><span style="font-size: 3em">&#9645;</span></td>
+							<td>Avantexte</td>
+						</tr>
+						<tr>
+							<td><span style="font-size: 3em">&#9675;</span></td>
+							<td>Genetic dossier</td>
+						</tr>
+						<tr>
+							<td><span style="font-size: 3em">&#9671;</span></td>
+							<td>Publication</td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<h4>Properties</h4>
+				</section>	
+
+
+
+
+
+
+
+
+				<section>
+					<h4><span style="color:#f4137c">roud-œuvres:isPartOf</span></h4>
+					<br/>
+					<table>
+						<tr>
+							<td width="20%"><span style="font-size: 5em">&#9645;</span><br/><br/>Avantexte</td>
+							
+							<td width="20%"><span style="font-size: 3em;color:#f4137c"> &#8594;</span></td>
+							
+							<td width="20%"><span style="font-size: 5em">&#9675;</span><br/><br/>Genetic Dossier
+							</td>
+						</tr>
+					</table>
+				</section>
+
+
+				<section>
+					<h4><span style="color:#2d72bc">roud-œuvres:isBefore</span></h4>
+					<br/>
+					<table>
+						<tr>
+							<td width="40%"><span style="font-size: 5em">&#9645;</span><br/><br/>Avantexte</td>
+							
+							<td width="30%"> <span style="font-size: 3em;color:#2d72bc">&#8594;</span></td>
+							
+							<td width="30%"><span style="font-size: 5em">&#9645;</span><br/><br/>Avantexte</td>
+						</tr>
+					</table>
+				</section>	
+
+				<section>
+					<h4><span style="color:#f4137c">roud-œuvres:resultsIn</span></h4>
+					<br/>
+					<table>
+						<tr>
+							<td width="20%"><span style="font-size: 5em">&#9675;</span><br/><br/>Genetic Dossier</td>
+							
+							<td width="20%"><span style="font-size: 3em;color:#f4137c"> &#8594;</span></td>
+							
+							<td width="20%"><span style="font-size: 5em">&#9671;</span><br/><br/>Publication<br/>
+							</td>
+						</tr>
+					</table>
+				</section>
+
+
+
+				<section>
+					<h4><span style="color:darkgreen">roud-œuvres:rewrittenIn</span></h4>
+					<br/>
+					<table>
+						<tr>
+							<td width="40%"><span style="font-size: 5em">&#9651;</span><br/><br/>Diary<br/>
+								<span class="smaller">(feuilles,petit carnets, etc.)</span></td>
+							
+							<td width="30%"> <span style="font-size: 3em;color:darkgreen">&#8594;</span></td>
+							
+							<td width="30%"><span style="font-size: 5em">&#9651;</span><br/><br/>Diary<br/>
+								<span class="smaller">(cahiers, etc.)</span>
+						</tr>
+					</table>
+				</section>
+
+
+				<section>
+					<h4><span style="color:#E5C100">roud-œuvres:reusedIn</span></h4>
+					<br/>
+					<table>
+						<tr>
+							<td width="20%"><span style="font-size: 4em">&#9651; &#9671;</span><br/><br/><span class="small">Diary or Publication</span></td>
+
+							<td width="20%"><span style="font-size: 3em;color:#E5C100"> &#8594;</span></td>
+							
+							<td width="20%"><span style="font-size: 4em">&#9675;</span><br/><br/><span class="small">Genetic Dossier</span></td>
+							
+							</td>
+						</tr>
+					</table>
+				</section>
+
+				<!--
+				<section>
+					<h4><span style="color:#E5C100">roud-œuvres:reusedIn</span></h4>
+					<br/>
+					<table>
+						<tr>
+							<td width="20%"><span style="font-size: 5em">&#9671;</span><br/><br/>Publication</td>
+
+							<td width="20%"><span style="font-size: 3em;color:#E5C100"> &#8594;</span></td>
+							
+							<td width="20%"><span style="font-size: 5em">&#9675;</span><br/><br/>Genetic Dossier</td>
+							
+							</td>
+						</tr>
+					</table>
+				</section>
+				-->
+
+
+
+
+
+
+
+
+
+				<section>
+					<h3>FRBRoo ? CIDOC-CRM ?</h3>
+					<br/><br/>
+					A solution for
+					<br/><br/>
+					<ul class="small">
+						<li>avantexte and diary</li>
+						<li>their relationships with other avantexte materials</li>
+						<li>their relationships with publication</li>
+					</ul>
+					<br/><br/>???
+				</section>
+
+				
+				<section class="small">
+					<h3>FRBRoo ?</h3>
+					<br/>
+					<div class="fragment">The concept of an Individual Work (F14) is <span style="color:tomato">completely realised</span> in a single Self-Contained Expression (F22). This  class  comprises  the  immaterial  realisations  of  individual  works  at  a  particular time  that  are  regarded  as  a  complete  whole. [From FRBRoo 2.4]</div>
+					<br/>
+					<div class="fragment"><b>Draft is too incomplete, fragmentary, sketchy to be a Work or its realisation in a Self-Contained Expression</b></div>
+					<br/>
+					<div style="border:1px solid grey;padding:20px">a DRAFT is a written document that prepares a discourse, <span style="color:tomato">without realising it yet</span>.<br/><span class="small">[Working definition by R. Mahrer]</span></div>
+				</section>
+
+				<section class="small">
+					<h3>FRBRoo ?</h3>
+					<img width="80%" src="images/ExpressionCreation.png"/>
+					<div style="text-align: left" class="smaller">
+						<p class="fragment" data-fragment-index="1"><b>Expression Creation (F28)</b>. "When you scribble the first draft of a poem on a sheet of paper, you produce an instance of F4 Manifestation Singleton"</p>
+						<p class="fragment" data-fragment-index="2"><b>Manifestation Singleton (F4)</b>. "Examples of instances of F4 Manifestation Singleton include manuscripts, preparatory sketches and the final clean draft sent by an author or a composer to a publisher."</p>
+						<p style="color: tomato" class="fragment" data-fragment-index="3"><b>Expression (F2)</b>. "if a text is revised or modified, the resulting F2 Expression is considered to be a new F2 Expression."</p>
+						<p style="text-align: center" class="fragment" data-fragment-index="4"><b>"Revised or modified" are not modelled. Start from scratch every time?</b></p>
+					</div>
+				</section>
+
+				<section class="smaller">
+					<h3>Revised or modified (FRBR00, CIDOC-CRM) ?</h3>
+					<br/><br/>
+					<div style="text-align: left">
+						<p><b>is composed of (P106)</b>. parts / all</p>
+						<p><b>incorporates (P165)</b>. parts / all</p>
+						<p><b>has modified (P31)</b>. applies to E24 Physical Mad-Made Thing.<br/><br/><span class="fragment">"This property identifies the E24 Physical Man-Made Thing modified in an E11 Modification. If a  modification is applied to a non-man-made object, it is regarded  as  an  E22  Man-Made Object from that time onwards.."</p>
+					</div>
+				</section>
+
+				<section>
+					<img src="images/InformationObject.svg">
+				</section>
+
+				
+
+				<section>
+					Which resources for which editions?
+					<br/>
+					<span class="fragment">Which <b>ontologies</b> for which editions?<br/>
+					<span class="smaller">works with multiple witnesses</span></span>
+					<br/><br/><br/><br/>
+					<span class="fragment"><span style="color: tomato">upper level ontology</span><br/>for <b>witness relationships</b><br/>in (all kinds of)
+					<b>textual criticism</b></span>
+				</section>
+
+				<section class="small">
+					<table>
+						<tbody>
+						<tr>
+							<td>
+								<h4 style="color:tomato">Classes</h4>
+								<ul>
+									<li>:Witness
+										<br/><span class="grey">diary entries, avantexte, publications; mss and incunabula</span>
+									</li>
+									<li>:Aggregation of witnesses
+										<br/><span class="grey">genetic dossier; family of witnesses</span>
+									</li>
+								</ul>
+								<br/><br/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="fragment">
+									<br/>
+									<h4 style="color:tomato">Properties</h4>
+									<ul>
+										<li>:Witness <b>:isPartOf</b> :Aggregation</li> 
+										<li><i>subclass &#8594;</i> :Witness <b>:isReusedIn</b> :Aggregation</li>
+										<li>:Aggregation <b>:resultsIn</b> :Witness</li>
+										<li>:Witness <b>:isBefore</b> :Witness</li>
+										<li>:Witness <b>:dependsOn</b> :Witness</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+					</table>
+				</section>
+
+				<section>
+					<div>upper level ontology for witnesses relationships</div>
+					<br/><br/>
+					<div class="fragment" data-fragment-index="2">
+							&#8593;
+						<br/>CRM<sub><i>inf</i></sub> : the Argumentation Model (<a href="http://www.cidoc-crm.org/crminf/ModelVersion/version-0.9">version 0.9</a>)
+						<p class="smaller">... argumentation, belief, evidences ...</p>
+							&#8593;
+					</div>
+					<br/><br/>
+					<div class="fragment" data-fragment-index="1">upper level ontology for text and document analysis</div>
+				</section>
+
+
+				<section>
+					<div class="fragment fade-out">taxonomy of errors? list of genetic stages?</div>
+					<br/>
+					<div class="fragment"><h3>upper level ontology</h3>general and explicit</div>
+				</section>
+
+
+
+
+
+
+
+
+
+				<section data-background-image="images/roud2.jpg" data-background-opacity="0.2">
+					<div style="text-align: left">
+						<br/><br/><br/><br/><br/><br/><br/><br/>
+						<div style="font-size: 0.4em;padding-right: 50%">
+							Elena Spadini, "Which Resources for Which Editions. Modelling the Relationships between Witnesses", <i>Workshop on Scholarly Digital Editions, Graph Data-Models and Semantic Web Technologies</i>, Université de Lausanne, 3-4 June 2019.<br/><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+							
+							<br/>Photos: copyright AGR - CLSR (UNIL)</div>
+					</div>
+				</section>
+
+				<section>
+					<img src="images/roud_varia.png">
+				</section>
+
+
+				
+
+
+
+
+
+
+
+
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../reveal/plugin/markdown/marked.js' },
+					{ src: '../reveal/plugin/markdown/markdown.js' },
+					{ src: '../reveal/plugin/notes/notes.js', async: true },
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

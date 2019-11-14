@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>UNIL 2018</title>
+
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="reveal/css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<script>
+			Reveal.initialize({
+					// More info https://github.com/hakimel/reveal.js#dependencies
+					dependencies: [
+						{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					]
+				});
+		</script>
+
+		<style>
+			div.quote {font-size: 0.8em; text-align: justify;}
+			div.source   {font-size: 0.6em; text-align: right; margin-top: 20px}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!--                                                                                                     -->
+<!-- Attenzione, i materiali per questa presentazione sono inside Talks/jupyter notebook e in Talks/materials -->
+<!--                                                                                                     -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+
+							
+				
+				<section>
+					<h3>Génétique textuelle <br/>et<br/> technologies numériques</h3>
+					<br/><br/>
+					<div style="font-size: 0.85em">
+					UNIL (Master Histoire du livre et &#233;dition des textes), 25.10.2018
+					<br/>
+					Projet « Gustave Roud, <i>Œuvres compl&#232;tes</i> » - Elena Spadini
+					<br/><br/>
+					<span style="text-decoration: underline; text-decoration-color: yellow">En ligne: <a href="https://elespdn.github.io/talks/20181025UNIL_master_genetique.html#/">elespdn.github.io/talks/20181025UNIL_master_genetique</a></span></div>
+				</section>
+
+
+
+				<section>
+					Table des matières
+					<br/><br/>
+					<ol>
+						<li>Encodage <span style="color:grey">[XML/TEI]</span></li>
+						<li>Comparaison <span style="color:grey">[algorithmes d'alignement]</span></li>
+						<li>Réseau <span style="color:grey">[OWL/RDF]</span></li>
+					</ul>
+				</section>
+
+
+				<section>
+					1. Encodage XML/TEI
+					<br/><br/>
+					<img style="border: none" src="images/20181025UNIL_master_genetique/focus1.png"/>
+				</section>
+
+				<section data-background-image="images/20181025UNIL_master_genetique/requiem_dactylo.png" data-background-size="60%"/>
+				</section>
+
+				<section>
+					XML
+					<br/>TEI (Text Encoding Initiative)
+
+				</section>
+
+				<section>
+					<img src="images/20181025UNIL_master_genetique/requiem_xml.png">
+				</section>
+
+				<section data-background-iframe="materials/20181025UNIL_master_genetique/XMLstages.html" data-background-interactive>
+				</section>
+
+
+				<section>
+					2. Collation automatique
+					<br/><br/>
+					<img style="border: none" src="images/20181025UNIL_master_genetique/focus2.png"/>
+				</section>
+
+				<section>
+					<h3>Outils de collation</h3>
+					<br/>
+					<p>Parmi les plus utilisés ...</p> 
+					<ul>
+						<li><a href="http://juxtacommons.org/" target="_blank">Juxta Commons</a></li>
+						<li>CollateX (<a href="https://collatex.net/" target="_blank">Java</a> | <a href="https://pypi.python.org/pypi/collatex" target="_blank">Python</a>)</li>
+					</ul>
+				</section>
+
+				<section>
+					<a href="https://github.com/elespdn/elespdn.github.io/blob/master/talks/jupyternotebook/20181025masterUNIL/Missy-Cendre.ipynb" target="_blank">
+						<img src="images/20181025UNIL_master_genetique/collatexMissyCendre.png"></img>
+					</a>
+				</section>
+
+				<section>
+					<span style="font-size: 1.6em">Plateforme <a href="http://variance.ch/" target="_blank">« Variance »</a></span>
+				</section>
+
+				<section>
+					3. Réseau génétique
+					<br/><br/>
+					<img style="border: none" src="images/20181025UNIL_master_genetique/focus3.png"/>
+				</section>
+
+				<section>
+					<img src="images/20181005_fbk/DHprojectComponents.png">
+					<br/><br/>
+					<div class="source"><i>Intro to Digital Humanities. <a href="http://dh101.humanities.ucla.edu/?page_id=15" target="_blank">1B: Analysis of DH projects</a></i>. Johanna Drucker, UCLA</div>
+				</section>
+
+				<section>
+					<img src="images/20181005_fbk/DHprojectComponents_highlighted.png">
+					<div class="source"><i>Intro to Digital Humanities. <a href="http://dh101.humanities.ucla.edu/?page_id=15" target="_blank">1B: Analysis of DH projects</a></i>. Johanna Drucker, UCLA</div>
+				</section>
+
+				<section data-background-image="images/20181005_fbk/magazzino1.png" data-background-size="contain">
+				</section>
+
+				<section data-background-image="images/20181005_fbk/magazzino2.png" data-background-size="contain">
+				</section>
+
+				<section data-background-image="images/20181025UNIL_master_genetique/magazzino3_fr.png" data-background-size="contain">
+				</section>
+
+				<section>
+					<img src="images/20181025UNIL_master_genetique/DHprojectComponents_magazzino_fr.png">
+				</section>
+
+				<section data-background-image="images/20181025UNIL_master_genetique/roud_materiali_fr.png" data-background-size="contain">
+				</section>	
+
+				<section>
+					1. <img src="images/20181025UNIL_master_genetique/roud_genetic_no_fr.png" />
+					2. <img src="images/20181025UNIL_master_genetique/roud_genetic_yes_fr.png" />
+				</section>	
+
+				<section>
+					<img src="images/20181025UNIL_master_genetique/roud_genetic_cendre.png">
+				</section>
+
+				<section>
+					<img src="images/20181025UNIL_master_genetique/roud_genetic_dunRequiem.png">
+				</section>
+
+
+				<section> 
+					<img src="images/20181025UNIL_master_genetique/roud_statistics.png"/>
+				</section>	
+
+				<section>
+					Table des matières
+					<br/><br/>
+					<ol>
+						<li>Encodage <span style="color:grey">[XML/TEI]</span></li>
+						<li>Comparaison <span style="color:grey">[algorithmes d'alignement]</span></li>
+						<li>Réseau <span style="color:grey">[OWL/RDF]</span></li>
+					</ul>
+				</section>
+
+				<section>
+					
+					<div style="font-size: 0.65em;text-align: left">
+						<b>Editions du Journal de Roud :</b>
+						<ul>
+							<li>Roud, Gustave, <i>Journal</i>, éd. Philippe Jaccottet, Vevey, Bertil Galland, 1982.</li>
+							<li>Roud, Gustave, <i>Journal, Carnets, cahiers et feuillets, 1916-1971</i>, éd. Anne-Lise Delacrétaz et Claire Jaquier, Moudon, Editions Empreintes, 2004.</li>
+						</ul>
+
+						<b>Critique génétique :</b>
+						<ul>
+							<li>Biasi, Pierre-Marc de, <i>Génétique des textes</i>, Paris, CNRS, « Biblis », 2011.</li>
+							<li>Lejeune, Philippe, « Le journal : genèse d’une pratique », <i>Genesis</i> [En ligne], 32 | 2011. <a href="http://journals.openedition.org/genesis/310">journals.openedition.org/genesis/310</a></li>
+							<li>Mahrer, Rudolf, « La plume après le plomb », <i>Genesis</i> [En ligne], 44 | 2017. <a href="http://journals.openedition.org/genesis/1731">journals.openedition.org/genesis/1731</a></li>
+							<li>Simonet-Tenant, Françoise, « Le journal personnel comme pièce du dossier génétique », Genesis [En ligne], 32 | 2011. <a href="http://journals.openedition.org/genesis/425">journals.openedition.org/genesis/425</a></li>
+						</ul>
+
+						<b>Éditions numériques et génétiques :</b>
+						<ul>
+							<li>TEI - Text Encoding Initiative <a href="http://tei-c.org/">tei-c.org/</a></li>
+							<li>CollateX <a href="http://collatex.net/">collatex.net/</a></li>
+							<li>Catalogue of Digital Editions <a href="https://dig-ed-cat.acdh.oeaw.ac.at/">dig-ed-cat.acdh.oeaw.ac.at/</a></li>
+							<li>a catalog of Digital Scholarly Editions <a href="http://www.digitale-edition.de/">www.digitale-edition.de/</a></li>
+						</ul>
+					</div>
+
+
+
+				</section>
+
+				
+
+			</div>
+		</div>
+
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'reveal/plugin/markdown/marked.js' },
+					{ src: 'reveal/plugin/markdown/markdown.js' },
+					{ src: 'reveal/plugin/notes/notes.js', async: true },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+
+td {
+	padding:50px
+}
+
+.transcription {
+	font-size:1.2em; 
+	line-height: 1.5
+}
+
+.add {
+	vertical-align: super;
+	font-size: 0.8em;
+	background-color: yellow;
+}
+
+.del {
+	text-decoration: line-through;
+	background-color: yellow;
+}
+
+.red {
+	color:red;
+}
+
+.grey {
+	color:grey;
+}

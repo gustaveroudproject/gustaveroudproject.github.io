@@ -1,0 +1,29 @@
+
+.section {
+	padding:100px 0 100px 60px;
+}
+
+img {
+	padding-right: 30px;
+}
+
+.entreacte {
+	display: block;
+	font-size: 3em;
+	padding: 30px 0 30px 50px;
+}
+
+pre {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1.5em;
+}
+
+.hicode {
+	color: red;
+}
+
+.division {
+	font-size: 15em;
+	text-align: center;
+	display: block;
+}

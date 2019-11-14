@@ -1,0 +1,44 @@
+
+body {
+	padding:50px;
+}
+
+th:first-child {
+	font-size: 1.5em
+}
+
+table {
+	margin-top: 20px;
+}
+
+td {
+	text-align: justify;
+	width: 30%;
+	padding: 50px;
+}
+
+td:first-child {
+	text-align: justify;
+	width: 60%;
+	padding: 50px;
+	font-size: 0.7em
+}
+
+.feuillets {
+	background-color: #f3de8a;
+}
+
+.essai {
+	background-color: #eb9486;
+}
+
+.air {
+	background-color: #66c2a5;
+}
+
+
+.divref {
+	padding: 10px;
+	margin: 100px 0 100px 0;
+	text-align: center;
+}

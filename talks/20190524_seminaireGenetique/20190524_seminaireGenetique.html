@@ -1,0 +1,509 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>UNIL 2019</title>
+
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<script>
+			Reveal.initialize({
+					// More info https://github.com/hakimel/reveal.js#dependencies
+					dependencies: [
+						{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					]
+				});
+		</script>
+
+		<style>
+			div.quote {font-size: 0.8em; text-align: justify;}
+			div.source   {font-size: 0.6em; text-align: right; margin-top: 20px}
+			.grey {color:grey;}
+			.small {font-size: 0.8em}
+			.smaller {font-size: 0.6em}
+			ul > li {
+				list-style: circle;
+			}
+			.coloredTitle {
+				background-color:#003333
+			}			}	
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!--                                                                                                     -->
+<!-- Attenzione, i materiali per questa presentazione sono inside Talks/jupyter notebook e in Talks/materials -->
+<!--                                                                                                     -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+
+							
+				
+				<section>
+					<h3>Comment représenter et éditer une genèse ?</h3>
+					<br/><br/>
+					<div class="smaller">
+					Cours <i>Génétique des textes littéraires</i> de Rudolf Mahrer (UNIL), 24.05.2019
+					<br/><br/>
+					Alessio Christen et Elena Spadini (CLSR de l'UNIL)
+					<br/>
+					<span style="text-decoration: underline; text-decoration-color: grey"><a href="https://elespdn.github.io/talks/20190524_seminaireGenetique/20190524_seminaireGenetique.html#/">Présentation en ligne</a></span></div>
+				</section>
+
+
+
+				<section>
+					<h4 style="background-color:#003333">Table de matières</h4>
+					<br/><br/><br/>
+					<ol class="small">
+						<li>Éditions génétiques</li>
+						<li>Gustave Roud, pratiques d'écriture</li>
+						<li>Vers une modélisation des relations génétiques</li>
+					</ol>
+				</section>
+
+
+				<section data-background-color="#003333">
+					<h3>1. Éditions génétiques</h3>
+				</section>
+
+				<section>
+					<h4>édition</h4><br/><br/>médiation<br/>critique
+				</section>
+
+
+				<section>
+					<h4>Types d'édition génétique</h4>
+					<br/><br/>
+					<div class="small">
+						<ul>
+							<li style="list-style: none">éditions horizontales : <span class="grey">étudier une phase précise de la genèse (synchronie)</span></li>
+							<br/>
+							<li style="list-style: none">éditions verticales : <span class="grey">traverser l'épaisseur du dossier de genèse (diachronie)</span></li>
+						</ul>
+					</div>
+					<br/><br/>
+					<hr/>
+					<div class="smaller">Pierre-Marc de Biasi, <i>Génétique des textes</i>, CNRS 2011</div>
+				</section>
+
+				<section>
+					<h4>Edizione di filologia d'autore</h4>
+					<br/><br/>
+					<div class="small">
+						<ul>
+							<li>testo di una redazione (prima, ultima, intermedia)</li>
+							<li>apparato (genetico, evolutivo; verticale, orizzontale)</li>
+							<li>postille</li>
+							<li>varianti</li>
+						</ul>
+					</div>
+					<br/><br/>
+					<hr/>
+					<div class="smaller">Paola Italia & Giulia Raboni, <i>Che cosa è la filologia d’autore</i>, Carocci 2010</div>
+				</section>
+
+				<section>
+					<h4>éditions papier</h4>
+				</section>
+
+				<section>
+					<h4>outils numériques</h4>
+					<br/><br/><br/>					<ul class="small">
+						<li style="list-style: circle">XML-TEI</li>
+						<li style="list-style: circle">collation automatique</li>
+						<li>etc.</li>
+					</ul>
+				</section>
+
+				<section data-background-color="white" data-background-iframe="../materials/20181025UNIL_master_genetique/XMLstages.html" data-background-interactive>
+				</section>
+
+				<section>
+					<img src="../images/20181025UNIL_master_genetique/requiem_xml.png">
+				</section>
+
+				<section>
+					<h4>outils de collation automatique</h4>
+					<br/><br/><br/>
+					<div class="small">
+					<p>Parmi les plus utilisés ...</p> 
+					<ul>
+						<li><a href="http://juxtacommons.org/" target="_blank">Juxta Commons</a></li>
+						<li>CollateX (<a href="https://collatex.net/" target="_blank">Java</a> | <a href="https://pypi.python.org/pypi/collatex" target="_blank">Python</a>)</li>
+					</ul></div>
+				</section>
+
+				<section>
+					<a href="https://github.com/elespdn/elespdn.github.io/blob/master/talks/jupyternotebook/20181025masterUNIL/Missy-Cendre.ipynb" target="_blank">
+						<img src="../images/20181025UNIL_master_genetique/collatexMissyCendre.png"></img>
+					</a>
+				</section>
+
+				<section>
+					<span>Plateforme <a href="http://variance.ch/" target="_blank">« Variance »</a></span>
+				</section>
+
+				<section>
+					<h4>Éditions numériques (pas numérisées)<br/>Catalogues</h4><br/><br/>
+					<ul class="small">
+						<li><a href="http://www.digitale-edition.de/">Catalog of Digital Scholarly Editions</a>, compiled by Patrick Sahle</li><br/>
+						<li><a href="https://dig-ed-cat.acdh.oeaw.ac.at/">Catalogue Digital Editions</a>, by Greta Franzini</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h4>Éditions numériques<br/>Exemples</h4><br/><br/>
+					<ul class="small">
+						<li><a href="http://www.koeppen-jugend.de/lesetext#Page7_EA" target="_blank">Wolfgang Koeppen, <i>Jugend</i></a></li>
+						<li><a href="https://digital.lib.umd.edu/transition" target="_blank">In Transition: Selected Poems by the Baroness Elsa von Freytag-Loringhoven</a></li>
+						<li><a href="http://shelleygodwinarchive.org/" target="_blank">The Shelley-Godwin Archive</a></li>
+						<li><a href="http://nagano.upb.de:29999/eb9eaa89" target="_blank">Beethovens Werkstatt</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>Éditions numériques<br/>Attention!</h4><br/><br/>
+					<div class="small">
+						<ul>
+					<li><a href="https://ride.i-d-e.de/">RIDE: A review journal for digital<br/>editions and resources</a></li>
+					<br/><li><a href="https://www.mla.org/Resources/Research/Surveys-Reports-and-Other-Documents/Publishing-and-Scholarship/Reports-from-the-MLA-Committee-on-Scholarly-Editions/MLA-Statement-on-the-Scholarly-Edition-in-the-Digital-Age">
+MLA Statement on the Scholarly<br/>Edition in the Digital Age</a></li></ul></div>
+				</section>
+
+				<section>
+				<h4>Éditions hybrides<br/>Exemples</h4><br/><br/>
+					<ul class="small">
+						<li><a href="https://www.unil.ch/crlr/home/menuinst/projets-de-recherche/gustave-roud-oeuvres-completes.html">Gustave Roud, Œuvres complètes</a></li>
+						<li><a href="http://thalamus.huma-num.fr/index.html">Le Petit Thalamus de Montpellier</a></li>
+						<li><a href="http://beckettarchive.org/">Beckett Archive</a></li>
+						<li>Sartre, <i>Les Mots</i></li>
+					</ul>
+				</section>
+
+
+<!--
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+ -->
+
+
+
+				<section data-background-color="#003333">
+					<h3>2. Gustave Roud,<br/>pratiques d'écriture</h3>
+				</section>
+
+				<section>
+					<img width="40%" src="images/roud.png">
+					<br/><span class="small">Gustave Roud, 1897-1976</span>
+				</section>
+
+				<section>
+					<h4>Trois manières de composer un texte</h4>
+					<br/><br/>
+					<ul class="small">
+						<li style="list-style: none" class="fragment"><b><i>A</i></b>. Genèse « classique » : texte et avant-texte</li>
+						<li style="list-style: none" class="fragment"><b><i>B</i></b>. Genèse à partir du Journal : des notes a posteriori génétiques</li>
+						<li style="list-style: none" class="fragment"><b><i>C</i></b>. Genèse à partir textes déjà publiés : reprise et poursuite, des genèses post-éditoriales</li>
+					</ul>
+				</section>
+
+				<section>
+				    <img width="50%" src="images/CRLR_GR_MS1E7c_1r_1.png"></img>
+				    <div style="width: 300px;float: right">
+				    	<br/>
+					    <h4>Liste « Thèmes p. l’article de la Guilde »</h4>
+					    <br/><br/>
+					    <div class="smaller" style="text-align: left"><span class="small">
+					    « D’une certaine pureté », <i>Bulletin mensuel de la Guilde du livre</i>, no 1, janvier 1940, pp. 2-4
+					    <br/><br/>« Deux fragments d’un hommage à C. F. Ramuz », <i>Suisse romande</i>, no 2, 1er juin 1938, pp. 80-82</span>
+						</div>
+					</div>
+				</section>
+
+				<section>
+				    <h4>Brouillon, « L’Hiver au village »</h4>
+				    <img width="50%" src="images/CRLR_GR_MS1E3a_1r_1.png"></img>
+				</section>
+
+				<section>
+				    <h4>Mise au net, « Le Monde réel »</h4>
+				    <img width="45%" src="images/CRLR_GR_MS2D7a_1r_1.png"></img>
+				</section>
+
+				<section>
+				    <h4>Brouillon, « Villages » </h4>
+				    <img width="50%" src="images/MS106-0076-1.jpg"></img>
+				</section>
+
+
+				<section data-background-image="images/MS106-0076-1.jpg" data-background-opacity="0.2" class="smaller">
+				        <h3>Transcription linéaire du début<br/>de « Villages », sans les biffures</h3>
+				        <br/><br/>
+				        <div style="text-align: left;line-height: 150%">
+					« (Le sentiment de mes « ressources » poétiques est étroitement lié à mon état spirituel. Suivant l’heure, elles m’apparaissent donc immenses ou infimes ; j’ignore entièrement leur réelle valeur, leur existence absolue.<br/>Parfois une illumination tire de l’ombre d’immenses trésors instantanés. Si je veux les saisir par une approche méthodique, cet or comme celui des fables n’est plus dans ma main que sable et feuilles mortes.<br/>Hier, après une longue période contradictoire et troublée de bien des semaines, un sursaut inespéré m’a rendu contact avec les richesses de ma quête de cet été, alors que je les croyais à jamais évanouies. « Villages » redevient donc possible, et tout de suite, j’en veux faire le centre de mon hiver.)<br/>Pôle de pensée, « chapitres » possibles. Garder la liberté, l’imprévu d’une promenade non machinée. Dédicace à m – sans la nommer.<br/>Pour finir, peut-être, reprendre cette phrase des notes : […] »</div>
+				</section>
+
+				<section data-background-image="images/cendreALL.png">
+					<!--
+					<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+					<h4>Parcours d’une note de Journal « Missy 11h et demie »</h4>
+					-->
+				</section>
+
+
+
+
+
+<!--
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+ -->
+
+				<section data-background-color="#003333">
+					<h3>3. Vers une modélisation<br/>des relations génétiques</h3>
+				</section>
+
+				<section>
+					<h4>Modélisation</h4>
+					<br/><br/><br/>
+					<div class="small">Formalisation explicite et coherente<br/>de notre comprehension et interpretation des données.</div>
+				</section>
+
+				<section>
+					<img src="images/bovary.png">
+					<div class="source"><span class="small"><i>Les manuscrits de Madame Bovary</i>. <a href="http://www.bovary.fr/tableau_genetique.php?tabfen=norm&id=41&mxm=0000010002&tabfen=norm" target="blank">Tableaux génétique des brouillons</a></span></div>
+
+				</section>
+
+				<section>
+					<img src="images/lokalbericht.png">
+					<div class="source"><span class="small"><i>Hermann Burger, Lokalbericht. Digitale Edition</i>. <a href="http://www.lokalbericht.ch/dossier" target="_blank">Das genetische Dossier</a></span></div>
+				</section>
+
+				<section>
+					<div class="quote">	&ldquo; Ce qui est sans doute à retenir de cette experience [avec le logiciel <i>Storyspace</i>] [...] c'est la nécessité de <i>nommer</i> les liens et de prévoir des carrefours de liens &bdquo;</div>
+					<br/><br/>
+					<div class="source" style="width: 60%;float: right;"><span class="small">Daniel Ferrer, « La représentation hypertextuelle des manuscrits. Quelques leçons de douze années d'expériences », <i>L'Edition du manuscrit. De l'archive de création au scriptorium numérique</i>, éd. A. Crasson, 2008</span></div>
+				</section>
+
+				<section>
+					<h4>Ontologie<br/>(web semantique)<br/><br/>Triplet RDF</h4>
+					<br/><br/>
+					<span class="fragment"><i>sujet &emsp;&emsp;&emsp;&emsp;&emsp; -----prédicat---> &emsp;&emsp;&emsp;&emsp;&emsp; objet</i></span>
+					<br/><br/>
+					<span class="fragment"><i>classe &emsp;&emsp;&emsp; -----propriété---> &emsp;&emsp;&emsp; classe / literal</i></span>
+					
+
+				</section>
+
+				<section>
+					<h4>Classes</h4>
+					<br/><br/>
+					<table class="small">
+						<tr>
+							<td><span style="font-size: 3em">&#9645;</span></td>
+							<td>Document</td>
+						</tr>
+						<tr>
+							<td><span style="font-size: 3em">&#9675;</span></td>
+							<td>Dossier génétique</td>
+						</tr>
+						<tr>
+							<td><span style="font-size: 3em">&#9671;</span></td>
+							<td>Publication</td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<h4>Propriétés</h4>
+				</section>	
+
+
+				<section>
+					<h4><span style="color:#f4137c">roud-œuvres:isPartOfGeneticDossier</span></h4>
+					<br/>
+					<table>
+						<tr>
+							<td width="20%"><span style="font-size: 5em">&#9645;</span><br/><br/>Document</td>
+							
+							<td width="20%"><span style="font-size: 3em;color:#f4137c"> &#8594;</span></td>
+							
+							<td width="20%"><span style="font-size: 5em">&#9675;</span><br/><br/>Genetic Dossier
+							</td>
+						</tr>
+					</table>
+				</section>
+
+
+				<section>
+					<h4><span style="color:#2d72bc">roud-œuvres:isBeforeInAvantTexte</span></h4>
+					<br/>
+					<table>
+						<tr>
+							<td width="40%"><span style="font-size: 5em">&#9645;</span><br/><br/>Document</td>
+							
+							<td width="30%"> <span style="font-size: 3em;color:#2d72bc">&#8594;</span></td>
+							
+							<td width="30%"><span style="font-size: 5em">&#9645;</span><br/><br/>Document</td>
+						</tr>
+					</table>
+				</section>	
+
+				<section>
+					<h4><span style="color:#f4137c">roud-œuvres:GeneticDossierResultsIn</span></h4>
+					<br/>
+					<table>
+						<tr>
+							<td width="20%"><span style="font-size: 5em">&#9675;</span><br/><br/>Genetic Dossier</td>
+							
+							<td width="20%"><span style="font-size: 3em;color:#f4137c"> &#8594;</span></td>
+							
+							<td width="20%"><span style="font-size: 5em">&#9671;</span><br/><br/>Publication<br/>
+							</td>
+						</tr>
+					</table>
+				</section>
+
+
+
+				<section>
+					<h4><span style="color:darkgreen">roud-œuvres:diaryRewrittenInDiary</span></h4>
+					<br/>
+					<table>
+						<tr>
+							<td width="40%"><span style="font-size: 5em">&#9645;</span><br/><br/>Document<br/>
+								<span class="smaller">(feuilles,petit carnets, etc.)</span></td>
+							
+							<td width="30%"> <span style="font-size: 3em;color:darkgreen">&#8594;</span></td>
+							
+							<td width="30%"><span style="font-size: 5em">&#9645;</span><br/><br/>Document<br/>
+								<span class="smaller">(cahiers, etc.)</span>
+						</tr>
+					</table>
+				</section>
+
+
+				<section>
+					<h4><span style="color:#E5C100">roud-œuvres:diaryReusedIn</span></h4>
+					<br/>
+					<table>
+						<tr>
+							<td width="20%"><span style="font-size: 5em">&#9645;</span><br/><br/>Document</td>
+
+							<td width="20%"><span style="font-size: 3em;color:#E5C100"> &#8594;</span></td>
+							
+							<td width="20%"><span style="font-size: 5em">&#9675;</span><br/><br/>Genetic Dossier</td>
+							
+							</td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<h4><span style="color:#E5C100">roud-œuvres:publicationReusedIn</span></h4>
+					<br/>
+					<table>
+						<tr>
+							<td width="20%"><span style="font-size: 5em">&#9671;</span><br/><br/>Publication</td>
+
+							<td width="20%"><span style="font-size: 3em;color:#E5C100"> &#8594;</span></td>
+							
+							<td width="20%"><span style="font-size: 5em">&#9675;</span><br/><br/>Genetic Dossier</td>
+							
+							</td>
+						</tr>
+					</table>
+				</section>
+
+
+				
+				
+
+				<section data-background-image="images/Figure5_graphCendre1.png" data-background-size="contain">
+				</section>
+
+				<section data-background-image="images/Figure6_graphCendre2.png" data-background-size="contain">
+				</section>
+
+				<section data-background-image="images/Figure7_graphRequiem1_NEW.png" data-background-size="contain">
+				</section>
+
+				<section data-background-image="images/Figure8_graphRequiem2_NEW.png" data-background-size="contain">
+				</section>
+
+
+
+				<section data-background-image="images/roud2.jpg" data-background-opacity="0.2">
+					<div class="smaller" style="width: 28%;text-align: center;">
+						<br/><br/><br/><br/><br/><br/><br/><br/>
+						<span class="smaller">
+						Alessio Christen et Elena Spadini, <i>Comment représenter et éditer une genèse ?</i>, Cours <i>Génétique des textes littéraires</i> de Rudolf Mahrer (UNIL), 24.05.2019, Université de Lausanne.<br/></span><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+					</div>
+				</section>
+
+
+				
+
+
+
+
+
+
+
+
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../reveal/plugin/markdown/marked.js' },
+					{ src: '../reveal/plugin/markdown/markdown.js' },
+					{ src: '../reveal/plugin/notes/notes.js', async: true },
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
