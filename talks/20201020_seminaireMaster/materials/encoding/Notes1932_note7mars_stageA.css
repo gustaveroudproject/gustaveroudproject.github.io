@@ -1,0 +1,23 @@
+
+teiHeader {
+	display: none;
+}
+
+add {
+	display: none;
+}
+
+lb[break="no"]::before {
+  content: "-\A";
+  white-space: pre;
+}
+
+lb::before {
+  content: "\A";
+  white-space: pre;
+}
+
+del {
+	text-decoration: none;
+}
+
