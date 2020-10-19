@@ -40,9 +40,13 @@
 			section {
 				text-align: left
 			} 
-			div.quote {font-size: 0.7em; margin-bottom: 1.5em; margin-top:1.8em;}
-			div.source   {font-size: 0.5em; text-align: right; line-height: 0em}
+			div.quote {font-size: 0.7em; margin-bottom:0.5em; margin-top:1.8em;}
+			div.source   {font-size: 0.5em; text-align: right;}
 			div.imagen-texto {float: left; width: 50%;padding:3px;margin-right: 50px;}
+			a:link {color: #00A4CCFF;}
+			a:visited {color: #00A4CCFF;}
+			a:hover {color: #00A4CCFF;}
+			a:active {color: #00A4CCFF;}
 
 		</style>
 
@@ -61,8 +65,8 @@
 					<h3>Le chantier<br/>« Gustave Roud,<br/><em>Œuvres complètes</em> »</h3>
 					<br/>
 					<div style="background-color: orange;padding:30px;color:black;text-align: center" class="smallest">
-						Centre des littératures en Suisse romande (CLSR)<br/>Université de Lausanne
-						<br/>20 octobre 2020
+						Programme de spécialisation <em>Histoire du livre et édition critique des textes</em>
+						<br/>Cours <em>Génétique textuelle</em> (Daniel Maggetti)<br/>Université de Lausanne, 20 octobre 2020
 					</div>
 				</section>
 
@@ -316,31 +320,153 @@
 					<h4>Éditions numériques<br/>Attention!</h4><br/><br/>
 					<div class="small">
 						<ul>
-					<li><a href="https://ride.i-d-e.de/">RIDE: A review journal for digital<br/>editions and resources</a></li>
+					<li><a href="https://ride.i-d-e.de/">RIDE</a>: A review journal for digital editions and resources</li>
 					<br/><li><a href="https://www.mla.org/Resources/Research/Surveys-Reports-and-Other-Documents/Publishing-and-Scholarship/Reports-from-the-MLA-Committee-on-Scholarly-Editions/MLA-Statement-on-the-Scholarly-Edition-in-the-Digital-Age">
-MLA Statement on the Scholarly<br/>Edition in the Digital Age</a></li></ul></div>
+MLA Statement</a> on the Scholarly Edition in the Digital Age</li></ul></div>
 				</section>
+
+
+				<!-- ################################################################################ -->
+				<!-- ################################################################################ -->
+				<!-- ################################################################################ -->
+				<!-- ################################################################################ -->
 
 				<section data-background-color="orange">
 					<h4 style="color:black">VII. Éditions numériques : technologies</h4>
 				</section>
 
-				<section>TEI ...</section>
+				<section>
+					<span class="colored">Quelle technologie pour quel besoin</span>
+					<br/><br/>
+					<ol>
+						<li>Encodage de textes : TEI</li>
+						<li>Structurer l'information : bases de données</li>
+						<li>Comparer les témoins : collation semi-automatique</li>
+						<li>Reprise textuelle : <em>text reuse</em></li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>1. Encodage de textes</h3>
+				</section>
+
+				<section>
+					Text Encoding Initiative (<a href="tei-c.org/">TEI</a>)
+				</section>
 
 				<section data-background-color="white" data-background-iframe="materials/encoding/Notes1932_note7mars.html"
           				data-background-interactive>
 				</section>
 
 				<section>
-					TEI et/ou base de données ...
-					<img src="images/dbSearch.png" />
+					<h3>2. Bases de données</h3>
 				</section>
 
-				<section>collation ...</section>
+				<section>
+					<img src="images/DHprojectComponents.png">
+					<br/><br/>
+					<div class="source"><i>Intro to Digital Humanities. <a href="http://dh101.humanities.ucla.edu/?page_id=15" target="_blank">1B: Analysis of DH projects</a></i>. Johanna Drucker, UCLA</div>
+				</section>
 
-				<section>tracer ...</section>
+				<section>
+					<img src="images/DHprojectComponents_highlighted.png">
+					<div class="source"><i>Intro to Digital Humanities. <a href="http://dh101.humanities.ucla.edu/?page_id=15" target="_blank">1B: Analysis of DH projects</a></i>. Johanna Drucker, UCLA</div>
+				</section>
 
-				<section>web semantique ...</section>
+				<section data-background-image="images/magazzino1.png" data-background-size="contain">
+				</section>
+
+				<section data-background-image="images/magazzino2.png" data-background-size="contain">
+				</section>
+
+				<section data-background-image="images/magazzino3_fr.png" data-background-size="contain">
+				</section>
+
+				<section>
+					<img src="images/DHprojectComponents_magazzino_fr.png">
+				</section>
+
+				<section>
+					<span class="colored">Différentes types de bases de données</span>
+					<br/><br/>
+					<ul>
+						<li>XML</li>
+						<li>relationnelles (SQL)</li>
+						<li>orientées graphe (NoSQL)</li>
+						<li>etc.</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h3>3. Collation semi-automatique</h3>
+				</section>
+
+				<section>
+					<img width="80%" src="images/froger1968_2.png" />
+					<br/>
+					<img width="80%" src="images/froger1968_3.png" />
+				</section>
+
+				<section>
+					<img src="images/sequence-alignment.png"/>
+				</section>
+
+				<section>
+					<img style="background-color: white" width="130%" src="images/colwellTune-earlyVarGraph.jpg">
+					<div class="source">Colwell, E. and Tune, E. 1964. "Variant readings: classification and use". <em> Journal of Biblical Literature</em>, 83 (3), 253–261.</div>
+				</section>
+
+				<section>
+					<img style="background-color: white" width="130%" src="images/variant-graph-schmidt.png">
+					<div class="source">Schmidt, D. and Colomb, R., 2009. "A data structure for representing multi-version texts online". <em>International Journal of Human-Computer Studies</em>, 67.6, 497-514.
+						<br/><br/>
+				    Schmidt, D., 2009. "Merging Multi-Version Texts: a Generic Solution to the Overlap Problem". In Proceedings of <em>Balisage: The Markup Conference 2009</em>. Balisage Series on Markup Technologies, vol. 3 (2009).</div>
+				</section>
+
+				<section>
+					<span class="colored">Outils de collation</span>
+					<br/><br/>
+					<p>Parmi les plus utilisés ...</p> 
+					<ul>
+						<li>CollateX (<a href="https://collatex.net/" target="_blank">Java</a> | <a href="https://pypi.python.org/pypi/collatex" target="_blank">Python</a>)</li>
+						<li><a href="http://www.traviz.vizcovery.org/">Traviz</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<span>Plateforme <a href="http://variance.ch/" target="_blank">« Variance »</a></span>
+				</section>
+
+				<section>
+					<h3>4. Reprise textuelle (<em>text reuse</em>)</h3>
+				</section>
+
+				<section>
+					Pour identifier citations, plagiat, intertextualité, paraphrase, etc.
+				</section>
+
+				<section>
+					<span class="colored">Outils de <em>text reuse</em></span>
+					<br/><br/>
+					<p>Parmi les plus utilisés (DH) ...</p> 
+					<ul>
+						<li><a href="https://www.etrap.eu/research/tracer/">TRACER</a> (Text Reuse Detection Machine)</li>
+						<li><a href="https://github.com/dasmiq/passim">Passim</a></li>
+					</ul>
+				</section>
+
+				<section><a href="https://fonds-roud.unil.ch/tracer/tracer_201904_01.html">Exemple</a> : <code>Tracer</code> et <em>Essai pour un paradis</em></section>
+
+				<section>
+					<p><a href="https://impresso-project.ch">Impresso Project</a> (EPFL) utilise <code>passim</code></p>
+					<p>Voir : Matteo Romanello, <em>NLP and text reuse</em> [<a href="https://www.youtube.com/watch?v=aJtm5x-5Pi0&ab_channel=ImpressoProject">youtube</a>]; <em>Text re-use detection in a nutshell</em>  [<a href="https://impresso-project.ch/news/2018/06/12/tradingzone-tr.html">blogpost</a>]</p>
+				</section>
+
+				<section>
+					Questions ? 
+				</section>
+
 
 
 
