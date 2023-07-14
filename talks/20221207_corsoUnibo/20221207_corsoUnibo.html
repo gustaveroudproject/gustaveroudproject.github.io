@@ -1,0 +1,580 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Genetic networks</title>
+
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<script>
+			Reveal.initialize({
+					// More info https://github.com/hakimel/reveal.js#dependencies
+					dependencies: [
+						{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					]
+				});
+		</script>
+
+		<style>
+			div.quote {font-size: 0.7em; margin-bottom: 1.5em; margin-top:1.5em;}
+			div.quote::before {content: "“";}
+			div.quote::after {content: "”";}
+			div.source   {font-size: 0.6em; text-align: right; margin-top: 20px}
+			.grey {color:grey;}
+			.small {font-size: 0.8em}
+			.smaller {font-size: 0.6em}
+			.smallest {font-size: 0.4em}
+
+			b {color:#d0513a;}
+			p {font-size: 0.8em}
+
+			.coloredTitle {
+				background-color:#003333
+			}				
+			div.left {text-align: left}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+<!-- ==================================================================================================  -->
+
+							
+				
+				<section>
+					<h3><b>Genetic networks.<br/>The case of Gustave Roud</b></h3>
+					<br/>
+					<div class="small" style="text-align: left">
+						University of Bologna, 7 december 2022
+						<br/><i>Scholarly Editing and Digital Textuality</i>, Prof. Paola Italia
+						<br/><br/><br/>
+						Elena Spadini (University of Basel)
+						<br/>
+					</div>
+				</section>
+				
+
+
+				<!--
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+ -->
+
+ 				<section>
+ 					<ol style="font-size: 0.9em">
+ 						<li>Gustave Roud, works and genesis</li>
+ 						<li>Edition(s)</li>
+ 						<li>Genetic relationships + exercise</li>
+ 						<li>Conclusions</li>
+ 					</ol>
+ 				</section>
+
+
+
+<!-- #############################################################################################################################
+	##################################################################################################################################
+	###############################################     ROUD     ##############################################
+	##################################################################################################################################
+	##################################################################################################################################
+	################################################################################################################################ -->
+
+				<section data-background-color="tomato">
+					<h3>Gustave Roud, works and genesis</h3>
+				</section>
+
+				<section>
+					<img style="border:0px" width="40%" src="images/roud.png">
+					<br/><span class="small">Gustave Roud, 1897-1976</span>
+					<p><a href="https://www.gustave-roud.ch">www.gustave-roud.ch</a></p>
+				</section>
+
+				<section>
+					<div class="left">
+					<p>
+						Gustave Roud, <i>Del camminare in pianura</i>, Armando Dadò Editore, Locarno, 2014.
+						<br/>
+						Gustave roud, <i>Requiem e altre prose poetiche</i>, Interlinea, 2006.
+						<br/><br/>
+						Bruno Pellegrino, <i>Là-bas, août est un mois d'automne</i>, Zoé, Genève, 2018 [<a href="https://www.editionszoe.ch/livre/la-bas-aout-est-un-mois-d-automne">link</a>]
+						<br/>in it: <i>Laggiù, agosto è già autunno</i>, Armando Dadò Editore, Locarno, 2020.
+
+					</p></div>
+				</section>
+
+				<section>
+					<h4>Gustave Roud,<br/>« Œuvres complètes »</h4>
+					<br/><br/>
+					<div class="small">
+						Projet FNS, 2017-2021</li>
+						<br/><b>Direction</b> : Claire Jaquier et Daniel Maggetti
+						<br/><b>Collaborateurs et collaboratrices</b> : Alessio Christen, Bruno Pellegrino, Elena Spadini, Julien Burri, Raphaëlle Lacord
+					</div>
+				</section>
+
+				
+				
+				<section>
+					<h4>Three ways to compose his texts</h4>
+					<br/><br/>
+					<ul class="small">
+						<li style="list-style: none" class="fragment"><b><i>A</i></b>. Classical genesis: text and avant-textes</li>
+						<li style="list-style: none" class="fragment"><b><i>B</i></b>. From the diary: diary entries, genetic materials a posteriori</li>
+						<li style="list-style: none" class="fragment"><b><i>C</i></b>. Genesis from previously published texts: reuse and continuation, post-editorial or epi- genesis</li>
+					</ul>
+				</section>
+
+				<section>
+				    <img width="50%" src="images/CRLR_GR_MS1E7c_1r_1.png"></img>
+				    <div style="width: 300px;float: right">
+				    	<br/>
+					    <h4>Liste « Thèmes p. l’article de la Guilde »</h4>
+					    <br/><br/>
+					    <div class="smaller" style="text-align: left"><span class="small">
+					    « D’une certaine pureté », <i>Bulletin mensuel de la Guilde du livre</i>, no 1, janvier 1940, pp. 2-4
+					    <br/><br/>« Deux fragments d’un hommage à C. F. Ramuz », <i>Suisse romande</i>, no 2, 1er juin 1938, pp. 80-82</span>
+						</div>
+					</div>
+				</section>
+
+				<section>
+				    <h4>Brouillon, « L’Hiver au village »</h4>
+				    <img width="50%" src="images/CRLR_GR_MS1E3a_1r_1.png"></img>
+				</section>
+
+				<section>
+				    <h4>Mise au net, « Le Monde réel »</h4>
+				    <img width="45%" src="images/CRLR_GR_MS2D7a_1r_1.png"></img>
+				</section>
+
+				<section>
+				    <h4>Brouillon, « Villages » </h4>
+				    <img width="50%" src="images/MS106-0076-1.jpg"></img>
+				</section>
+
+
+				<section data-background-image="images/roud_materiali_fr.png" data-background-size="contain">
+				</section>
+
+				<section data-background-iframe="images/AirSolitude_barchart/piechart_saisons.png" data-background-size="contain" data-background-interactive>
+					<h4 style="text-align: right">Exemple.<br/><em>Air de la solitude</em></h4>
+				</section>
+
+				<section data-background-iframe="images/AirSolitude_barchart/barchart_mots.html" data-background-size="contain" data-background-interactive>
+				</section>
+
+				<section data-background-iframe="images/AirSolitude_barchart/barchart_revue.html" data-background-size="contain" data-background-interactive>
+				</section>
+
+				<section>
+					<q>Notre longue marche par un pays pluvieux nous a conduits à ces quelques minutes au bord d’un lac d’argent pâle et lisse. Nous ne parlions plus. Ce silence était si lourd, si calme ; l’instant plus délicat que le paysage là-bas doucement repris par une brume translucide.</q>
+				</section>
+
+				<section>
+					<img src="images/notreLongueMarche.png">
+				</section>
+
+				<section>
+					<a href="images/posterDariahNeuchatel.pdf" target="_blank"><img src="images/posterDariahNeuchatel.png" width="40%"></a>
+				</section>
+
+
+
+				<section data-background-image="images/cendreALL.png">
+				</section>
+
+				<section data-background-image="images/graphCendre1.png" data-background-size="contain">
+				</section>
+
+				
+
+
+
+
+
+				
+
+<!-- #############################################################################################################################
+	##################################################################################################################################
+	###############################################     EDIZIONI     ##############################################
+	##################################################################################################################################
+	##################################################################################################################################
+	################################################################################################################################ -->
+
+				<section data-background-color="tomato">
+					<h3>Edition(s)</h3>
+				</section>
+
+				<section>
+					<h4>Edizione di filologia d'autore</h4>
+					<br/><br/>
+					<div class="small">
+						<ul>
+							<li>testo di una redazione (prima, ultima, intermedia)</li>
+							<li>apparato (genetico, evolutivo; verticale, orizzontale)</li>
+							<li>postille</li>
+							<li>varianti</li>
+						</ul>
+					</div>
+					<br/><br/>
+					<hr/>
+					<div class="smaller">Paola Italia & Giulia Raboni, <i>Che cosa è la filologia d’autore</i>, Carocci 2010</div>
+				</section>
+
+				<section>
+					<h4>Types d'édition génétique</h4>
+					<br/><br/>
+					<div class="small">
+						<ul>
+							<li style="list-style: none">éditions horizontales : <span class="grey">étudier une phase précise de la genèse (synchronie)</span></li>
+							<br/>
+							<li style="list-style: none">éditions verticales : <span class="grey">traverser l'épaisseur du dossier de genèse (diachronie)</span></li>
+						</ul>
+					</div>
+					<br/><br/>
+					<hr/>
+					<div class="smaller">Pierre-Marc de Biasi, <i>Génétique des textes</i>, CNRS 2011</div>
+				</section>
+
+
+
+				<section>
+					<h4>œuvres complètes de Gustave Roud</h4>
+					<p>
+					journal intime<br/>
+					œuvre poétiques<br/>
+					propos<br/>
+					traductions<br/>
+					(photographies)</p>
+					
+					<img style="border:0px" width="20%" src="images/roud-books.jpg" />
+					<img style="border:0px" width="50%" src="images/roud-site.png" />
+
+				</section>
+
+
+				<section style="text-align: center">
+					<h4>Why is this edition critical?<br/>Which is the scientific statement?</h4>
+					<br/>
+					<div class="small">
+						<div>based on the analysis of all the documents</div>
+						<div>richly annotated</div>
+						<div>
+						including translations and critics</div>
+						<div>
+						textual and material dimensions</div>
+						<div>
+						including the diary in the genesis</div>
+						<div>
+						widen the <i>œuvre</i> limits</div>
+						<br/>
+						<div class="small">landscape history, art history, literary geography, ethnography, sociology, queer studies, literary criticism, and media theory</div>
+					</div>
+				</section>		
+
+
+
+
+				
+
+<!-- #############################################################################################################################
+	##################################################################################################################################
+	###############################################     RELAZIONI     ##############################################
+	##################################################################################################################################
+	##################################################################################################################################
+	################################################################################################################################ -->
+
+				<section data-background-color="tomato">
+					<h3>Genetic relationships</h3>
+				</section>
+
+
+				<section>
+					<h4>Data model</h4>
+					<br/>
+					<div class="small">
+					Explicit and coherent formalisation of our understanding and interpretation of the data</div>
+				</section>
+
+				<section class="small">
+					<div>
+						<p>"formulare un modello di certi fenomeni equivale a formulare un'ipotesi su quei fenomeni"</p>
+						<div class="source">Carlo Cellucci, “I modelli, l'analogia e la metafora”</div>
+						<p>"un modello di dati [deve essere] in grado di formalizzare i procedimenti analitici e critici applicabili allo studio del testo"</q>
+						<div class="source">Dino Buzzetti, “Rappresentazione digitale e modello del testo”</div>
+					</div>
+					<br/>
+					<div style="padding:10px;border:1px solid gold;"><p><em><b>Il ruolo del modello nella scienza e nel sapere (Roma, 27-28 ottobre 1998)</b></em>, Sergio Carrà (ed.), Accademia nazionale dei Lincei, Roma 1999.</p></div>
+					<br/>
+					<div>
+						<p>McCarty, Willard. 2004. ‘Modeling: A Study in Words and Meanings’. In <i>A Companion to Digital Humanities</i>, edited by Susan Schreibman, Ray Siemens, and John Unsworth. Oxford: Blackwell. http://www.digitalhumanities.org/companion/.
+					</p>
+					</div>
+				</section>
+
+				<section>
+					<h3>modelling<br/>the document and the work:<br/><br/>the Text Encoding Initiative (TEI)</h3>
+					<p>Some examples:
+						<ul class="smaller">
+					<li>Johann Wolfgang Goethe: Faust. Historisch-kritische Edition. Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis unter Mitarbeit von Gerrit Brüning, Katrin Henzel, Christoph Leijser, Gregor Middell, Dietmar Pravida, Thorsten Vitt und Moritz Wissenbach.</li>
+					<li>The Shelley-Godwin Archive. Retrieved from http://shelleygodwinarchive.org</li>
+				</ul></p>
+				</section>
+
+
+				<section>
+				<div>
+					<img src="images/shelley_Picture-1.png"/>
+					<div class="source"><i>The Shelley-Godwin Archive </i><a href="http://shelleygodwinarchive.org/">shelleygodwinarchive.org/</a></div>
+					</div>	
+				</section>
+
+				<section>
+				<div>
+					<img src="images/shelley_Picture-3.png"/>
+					<div class="source"><i>The Shelley-Godwin Archive </i><a href="http://shelleygodwinarchive.org/">shelleygodwinarchive.org/</a></div>
+					</div>	
+				</section>
+
+				<section>
+				<div>
+					<img src="images/shelley_Picture-4.png"/>
+					<div class="source"><i>The Shelley-Godwin Archive </i><a href="http://shelleygodwinarchive.org/">shelleygodwinarchive.org/</a></div>
+					</div>	
+				</section>
+
+				<section>
+				<div>
+					<img src="images/shelley_Picture-5.png"/>
+					<div class="source"><i>The Shelley-Godwin Archive </i><a href="http://shelleygodwinarchive.org/">shelleygodwinarchive.org/</a></div>
+					</div>	
+				</section>
+
+				<section>
+				<div>
+					<img src="images/shelley_Picture-6.png"/>
+					<div class="source"><i>The Shelley-Godwin Archive </i><a href="http://shelleygodwinarchive.org/">shelleygodwinarchive.org/</a></div>
+					</div>	
+				</section>
+
+				<section>
+				<div>
+					<img src="images/shelley_Picture-7.png"/>
+					<div class="source"><i>The Shelley-Godwin Archive </i><a href="http://shelleygodwinarchive.org/">shelleygodwinarchive.org/</a></div>
+					</div>	
+				</section>
+
+
+				<section>
+					<h3>From the document to the network</h3>
+					<div>
+						<img src="images/genBovaryMss.png"/>
+						<div class="source"><a href="https://www.bovary.fr/">Les manuscrits de Madame Bovary</a>. Tableau génétique des brouillons</div>
+					</div>	
+				</section>
+
+				<section>
+					<div>
+						<img width="40%" src="images/genDurrenmattNet.png"/>
+						<div class="source"><a href="https://fd-stoffe-online.ch/">Friedrich Dürrenmatt, Das <i>Stoffe</i>-Project</a>. Einzelblatt-Stemma <i>Der Tod des Sokrates</i></div>
+					</div>	
+				</section>
+
+				<section>
+					<div>
+						<img width="80%" src="images/genLokalberichtNet.png"/>
+						<div class="source"><a href="http://www.lokalbericht.ch">Hermann Burger: Lokalbericht</a>. Digitale Edition. Herausgegeben von Peter Dängeli, Magnus Wieland, Irmgard M. Wirtz und Simon Zumsteg. Version. Bern 2016</div>
+					</div>	
+				</section>
+
+
+				<section>
+					Download materials for activities at<br/>https://doi.org/10.5281/zenodo.7408677
+				</section>
+
+
+
+
+				
+
+
+				<section class="small">
+					<h3>Semantic web. A web of linked data</h3>
+					<p>The Semantic Web provides a common framework that allows <b>data to be shared and reused</b> across application, enterprise, and community boundaries (<i>W3C</i>). Data are <b>organized</b> following rules defined in <b>shared ontologies</b>, which allows the query of big corpora and inferences.</p><br/>
+					<table>
+						<tr>
+							<td><img src="images/europeana.png"></td>
+							<td><p>Example: <a href="https://www.europeana.eu/portal/en">Europeana</a></p>
+					<p class="smaller">Other examples: governments (<a href="https://data.gov.uk/">data.gov.uk</a>), libraries (<a href="http://data.bnf.fr/">data.bnf.fr</a>), web searches (<a href="https://en.wikipedia.org/wiki/Knowledge_Graph">Google Knowledge Graph</a>), bio-medical resources (<a href="http://geneontology.org/">The Gene Ontology Resource</a></p></td>
+						</tr>
+					</table>
+				</section>
+
+				<section data-background-image="images/NDIGORP042968_page-0002.jpg" data-background-opacity="0.1">
+					<h4>Semantics in RDF triple</h4>
+					<table style="table-layout: fixed;width: 100%;font-weight: bold;color:tomato" class="small">
+						<tr>
+							<td>subject</td>
+							<td>&#9135; predicate &#10141;</td>
+							<td>object</td>
+						</tr>
+					</table>
+					<br/>
+					<div class="fragment smaller">
+						<div style="color:tomato; font-weight: bold;text-align: left">Dataset</div><br/>
+						<table style="table-layout: fixed;width: 100%">
+							<tr>
+								<td>ms BJ Rkp. Przyb. 9/19</td>
+								<td>&#9135; has author &#10141;</td>
+								<td>Wisława Szymborska</td>
+							</tr>
+							<tr>
+								<td>ms BJ Rkp. Przyb. 9/19</td>
+								<td>&#9135; is preserved in &#10141;</td>
+								<td>Biblioteka Jagiellońska</td>
+							</tr>
+							<tr>
+								<td>ms BJ Rkp. Przyb. 9/19</td>
+								<td>&#9135; has digital copy identifier &#10141;</td>
+								<td><a href="https://jbc.bj.uj.edu.pl/dlibra/publication/655374/edition/621451/content">NDIGORP042968</a></td>
+							</tr>
+						</table>
+					</div>
+					<br/>
+					<div class="fragment smaller">
+						<div style="color:tomato; font-weight: bold;text-align: left">Ontology (rules)</div><br/>
+						<table style="table-layout: fixed;width: 100%; font-weight: bold">
+							<tr>
+								<td>manuscript</td>
+								<td>&#9135; has author &#10141;</td>
+								<td>person</td>
+							</tr>
+							<tr>
+								<td>manuscript</td>
+								<td>&#9135; is preserved in &#10141;</td>
+								<td>library</td>
+							</tr>
+							<tr>
+								<td>manuscript</td>
+								<td>&#9135; has digital copy identifier &#10141;</td>
+								<td>id</td>
+							</tr>
+						</table>
+					</div>
+					<!--<span class="fragment"><i>class &emsp;&emsp;&emsp; property &emsp;&emsp;&emsp; class / literal</i></span>-->
+				</section>
+
+
+				<section>
+					<div class="quote">Ce qui est sans doute à retenir de cette experience [avec le logiciel <i>Storyspace</i>] [...] c'est la nécessité de <i>nommer</i> les liens et de prévoir des carrefours de liens</div>
+					<br/><br/>
+					<div class="source" style="width: 60%;float: right;"><span class="small">Daniel Ferrer, « La représentation hypertextuelle des manuscrits. Quelques leçons de douze années d'expériences », <i>L'Edition du manuscrit. De l'archive de création au scriptorium numérique</i>, éd. A. Crasson, 2008</span></div>
+				</section>
+
+
+				<section>
+					<h3>Dalla visualizzazione alla visualizzazione di dati</h3>
+					<img width="60%" src="images/genRoud_1941moissonneur.png">
+					<p>Christen and Spadini 2019, <a href="https://gen-o.github.io/">https://gen-o.github.io/</a></p>
+				</section>
+
+				
+
+<!-- #############################################################################################################################
+	##################################################################################################################################
+	###############################################     CONCLUSIONS     ##############################################
+	##################################################################################################################################
+	##################################################################################################################################
+	################################################################################################################################ -->
+
+
+
+				<section data-background-color="tomato">
+					<h3>Conclusions</h3>
+				</section>
+
+				<section>
+					<div class="left">
+					Proposal for a genetic network of typed relationships, general and explicit enough
+					<br/><br/>
+					<b>Data model</b> as formalisation of your understanding and interpretation of the data
+					<br/><br/>
+					Ontologies for sharing and reusing data and data models
+				</div>
+				</section>
+
+				<section>
+					<div class="left">
+					<p>
+						Thank you.
+						<br/><br/>
+						Bibliography in:<br/>
+						Christen, Alessio, and Elena Spadini. 2019. ‘Modeling Genetic Networks. Gustave Roud’s Œuvre, from Diary to Poetry Collections’. <i>Umanistica Digitale</i> 7. https://doi.org/10.6092/issn.2532-8816/9063.
+						<br/><br/>
+						elena.spadini@unibas.ch
+						<br/><br/>
+					</p>
+				</div>
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../reveal/plugin/markdown/marked.js' },
+					{ src: '../reveal/plugin/markdown/markdown.js' },
+					{ src: '../reveal/plugin/notes/notes.js', async: true },
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
