@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Genetic networks</title>
+
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<script>
+			Reveal.initialize({
+					// More info https://github.com/hakimel/reveal.js#dependencies
+					dependencies: [
+						{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					]
+				});
+		</script>
+
+		<style>
+			div.quote {font-size: 0.8em; text-align: justify;}
+			div.source   {font-size: 0.6em; text-align: right; margin-top: 20px}
+			.grey {color:grey;}
+			.small {font-size: 0.8em}
+			.smaller {font-size: 0.6em}
+			.coloredTitle {
+				background-color:#ffcc00;
+				padding:20px 0;
+			}
+			.coloredBorder {
+				border: 5px solid #ffcc00;
+				padding: 50px 10px;
+			}
+			.left {
+				text-align: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+							
+				
+				<section>
+					<h3 class="coloredTitle">Reading the genesis without texts:<br/>an ontology for genetic networks</h3>
+					<br/>
+					<div class="left">
+						<span>
+							<i>Genesis</i>. Bologna, 10 May 2024
+						</span>
+						<br/><br/>
+						<span class="small">
+							Elena Spadini (University of Basel, University of Bern)
+						</span>
+						
+					</div>
+					
+				</section>
+
+
+
+				<!--
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+==================================================================================================================
+ -->
+
+ 				<section style="font-size: 0.9em">
+					GENO (Genetic Networks Ontology) is an ontology to represent
+					genetic witnesses and their relationships.
+					<br/><br/>
+ 					<ol>
+ 						<li>The edition of the complete works of Gustave Roud</li>
+						<li>Visualising genetic networks</li>
+ 						<li>GENO, the Genetic Networks Ontology</li>
+ 					</ol>
+ 				</section>
+
+
+ 				<section>
+ 					<h3 class="coloredBorder">1. The edition of the complete works of Gustave Roud</h3>
+ 				</section>
+
+ 				<section>
+					<table>
+						<tr>
+							<td width="50%">
+								<div>
+									<img src="images/roud.png"/>
+								</div>
+							</td>
+							<td>
+								<div style="font-size: x-large;">
+									<b>Gustave Roud (1897-1976)
+									<br/><i><a href="https://www.unil.ch/clsr/home/menuinst/projets-de-recherche/gustave-roud-oeuvres-completes.html">Œuvres complètes</a></i></b>
+									<br/><br/>
+									<div>
+									<br/>Swiss National Science Foundation project - University of Lausanne, 2017-2021
+									<br/><br/>Dir. by Claire Jaquier and Daniel Maggetti
+									<br/><br/>Team: Alessio Christen, Bruno Pellegrino, Elena Spadini, Julien Burri, Raphaëlle Lacord</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<a href="https://roud.unil.ch">https://roud.unil.ch</a>
+				</section>
+
+
+
+				<section data-background-image="images/cartonsTraduction.JPG" data-background-size="contain">
+				</section>
+
+				<!--
+				<section>
+					<span class="colored">Example of manuscript description</span>
+					<br/><br/>
+					<ul style="font-size: 0.7em">
+						<li>title</li>
+						<li>archive</li>
+						<li>shelfmark</li>
+						<li>editorial set</li>
+						<li>type of document (manuscript, typescript, print)</li>
+						<li>with annotations</li>
+						<li>support (sheets, agenda, carnet, cahier, bloc-notes, enveloppe)</li>
+						<li>writing tool</li>
+						<li>writing color</li>
+						<li>date or established date</li>
+						<li>genetic stage (note, plan, list, draft, clear copy, final manuscript, proofs, corrected printout)</li>
+						<li>genetic dossier, bibliographical reference</li>
+					</ul>
+				</section>
+
+				
+				<section>
+					<h4>Three ways to compose his texts</h4>
+					<br/><br/>
+					<ul class="small">
+						<li style="list-style: none" class="fragment"><b><i>A</i></b>. Classical genesis: text and avant-texte</li>
+						<li style="list-style: none" class="fragment"><b><i>B</i></b>. From the diary: diary entries, genetic materials a posteriori</li>
+						<li style="list-style: none" class="fragment"><b><i>C</i></b>. Genesis from previously published texts: reuse and continuation, post-editorial or epi-genesis</li>
+					</ul>
+				</section>-->
+
+				<section data-background-image="images/cendreALL.png">
+				</section>
+
+				<section data-background-image="images/roud_materiali.png" data-background-size="contain">
+				</section>
+
+				<section data-background-iframe="../materials/20180524_cuso_recueil/AirSolitude_barchart/piechart_saisons.png" data-background-size="contain" data-background-interactive>
+					<h4 style="text-align: right">Exemple.<br/><em>Air de la solitude</em></h4>
+				</section>
+
+				<section data-background-iframe="../materials/20180524_cuso_recueil/AirSolitude_barchart/barchart_mots.html" data-background-size="contain" data-background-interactive>
+				</section>
+
+				<section data-background-iframe="../materials/20180524_cuso_recueil/AirSolitude_barchart/barchart_revue.html" data-background-size="contain" data-background-interactive>
+				</section>
+
+				<!--
+				<section data-background-iframe="../materials/20180524_cuso_recueil/NotreLongueMarche_scan/NotreLongueMarche.html" data-background-size="50%">
+				</section> -->
+
+				
+				<section>
+					<a href="https://roud.unil.ch/archive">https://roud.unil.ch/archive</a>
+				</section>
+
+
+				<section>
+					<h3 class="coloredBorder">2. Visualising genetic networks</h3>
+				</section>
+
+				<section>
+					stemma 
+					<br/>
+					map 
+					<br/>
+					table
+					<br/>
+					visualisation
+				</section>
+
+
+				<section>
+					<img src="images/bovary.png">
+					<div class="source"><a href="https://flaubert.univ-rouen.fr/manuscrits/%C3%A9dition-du-manuscrit-de-madame-bovary/madame-bovary/?page=17&open-genesis=true">Les manuscrits de Madame Bovary</a>. Tableau génétique des brouillons</div>
+
+				</section>
+				
+
+				<section>
+					<img src="images/lokalbericht.png">
+					<div class="source" style="font-size: large;"><a href="https://www.lokalbericht.ch/dossier">Hermann Burger, <i>Lokalbericht</i>. Digitale Edition</a>. Visualisierung der Textgenese / des Dokumentenkorpus</div>
+				</section>
+
+				<section>
+					<div>
+						<img width="40%" src="images/genDurrenmattNet.png"/>
+						<div class="source"><a href="https://fd-stoffe-online.ch/">Friedrich Dürrenmatt, Das <i>Stoffe</i>-Project</a>. Einzelblatt-Stemma <i>Der Tod des Sokrates</i></div>
+					</div>	
+				</section>
+
+				<section>
+					<div class="quote">	&ldquo; Ce qui est sans doute à retenir de cette experience [avec le logiciel <i>Storyspace</i>] [...] c'est la nécessité de <i>nommer</i> les liens et de prévoir des carrefours de liens &bdquo;</div>
+					<br/><br/>
+					<div class="source" style="width: 60%;float: right;"><span class="small">Daniel Ferrer, « La représentation hypertextuelle des manuscrits. Quelques leçons de douze années d'expériences », <i>L'Edition du manuscrit. De l'archive de création au scriptorium numérique</i>, éd. A. Crasson, 2008</span></div>
+				</section>
+
+				<section>
+					<div class="quote">To do something more, we need a fundamental shift away from the text-as-document
+						paradigm toward what Zundert and Robinson refer to as the text-as-work paradigm,
+						or what I will refer to as the text-as-network paradigm.<br/>
+						For those familiar with the history of the web, Tim Berners-Lee, and the recent
+						advance of Linked Open Data, some of this critique should feel
+						familiar</div>
+						<div class="source">Witt, Jeffrey C. 2018. “Digital Scholarly Editions and API Consuming Application.” In <i>Digital Scholarly Editions as Interfaces</i>.
+						</div>
+				</section>
+
+				<section>
+					<img src="images/geno_webVOWL.png">
+					<div class="source"><a href="https://github.com/gen-o/geno/tree/master/2019-09-01">GENO 0.2</a></div>
+				</section>
+
+				<section>
+					Data modelled according to GENO 0.2: <a href="https://github.com/gustaveroudproject/geneticNetworksDataViz">https://github.com/gustaveroudproject/geneticNetworksDataViz</a>
+				</section>
+
+				<section>
+					<img src="images/designProcess1.png">
+					<div class="source" style="font-size:0.4em">Elli, Tommaso, Andrea Benedetti, Valentina Pallacci, Elena Spadini, and Michele Mauri. 2023. <a href="https://doi.org/10.53681/c1514225187514391s.31.176">“Designing Network Visualizations for Genetic Literary Criticism.”</a> <i>Convergences - Journal of Research and Arts Education</i> 16 (31): 25–38.
+					</div>
+				</section>
+
+				<section>
+					<img src="images/designProcess2.png">
+					<div class="source" style="font-size:0.4em">Elli, Tommaso, Andrea Benedetti, Valentina Pallacci, Elena Spadini, and Michele Mauri. 2023. <a href="https://doi.org/10.53681/c1514225187514391s.31.176">“Designing Network Visualizations for Genetic Literary Criticism.”</a> <i>Convergences - Journal of Research and Arts Education</i> 16 (31): 25–38.
+					</div>
+				</section>
+
+				<section>
+					<img src="images/designProcess3.png">
+					<div class="source" style="font-size:0.4em">https://archive.ph/7N3gT + https://observablehq.com/@densitydesign/snodaroud
+					</div>
+				</section>
+
+				<section data-background-image="images/roud_AllNetworks.png" data-background-size="contain">
+
+				</section>
+
+				
+
+
+				<section>
+ 					<h3 class="coloredBorder">3. GENO</h3>
+ 				</section>
+
+ 				<section>
+ 					<h2><a href="https://gen-o.github.io/website/">GENO</a></h2>
+ 					<p>OWL2 Ontology for Genetic Criticism and Editing</p>
+					<br/><br/>
+					<p><a href="https://gen-o.github.io/website/">Website</a></p>
+ 				</section>
+
+				<section class="left">
+					Datasets:					<a href="https://github.com/gen-o/geno/tree/master/current/dataSample">Github repo</a>
+					<br/><br/>
+					<div class="small">
+						Forthcoming article in<br/><i>Research Data Journal for the Humanities and Social Sciences</i>
+					</div>
+					<!--ADD MENTION OF FRBR AND WHY THIS IS NOT SUITABLE
+
+					USE GENO DOCUMENTATION
+
+					MENTION THAT THIS CAN BE USEFUL WHEN COPYRIGHT PROBLEMS
+
+					SAY IN GENERAL WHERE IT CAN BE USEFUL -->
+				</section>
+
+				<section>
+					<h3>Conclusions</h3>
+					<div class="left" style="font-size: 0.9em;">
+						<p>
+						GENO is useful for
+						</p>
+						<p>
+						making explicit an important and often implicit part of the analysis: <i>classement des manuscrits</i></p>
+						
+						<p>
+						creating computable resources also when the text cannot be made available (copyright restrictions or other issues)</p>
+					</div>
+				</section>
+
+
+
+				<section>
+					Thanks for your attention
+					<br/><br/>
+					<div class="smaller">
+					Elena Spadini, "Reading the genesis without texts: an ontology for genetic networks", Presentation. Genesis 2024, Bologna, 10 maggio 2024. 
+				</div>
+				</section>
+
+ 				
+
+
+
+
+
+
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../reveal/plugin/markdown/marked.js' },
+					{ src: '../reveal/plugin/markdown/markdown.js' },
+					{ src: '../reveal/plugin/notes/notes.js', async: true },
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
